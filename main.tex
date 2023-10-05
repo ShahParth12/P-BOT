@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+An analysis of DDos attacks that threaten the Cloud Environment.
+ }
+
+%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
+%         University of Twente\\
+%         7500 AE Enschede, The Netherlands\\
+%         {\tt\small h.kwakernaak@autsubmit.com}}
+%         \hspace*{ 0.5 in}
+%         \parbox{3 in}{ \centering Pradeep Misra**
+%         \thanks{**The footnote marks may be inserted manually}\\
+%        Department of Electrical Engineering \\
+%         Wright State University\\
+%         Dayton, OH 45435, USA\\
+%         {\tt\small pmisra@cs.wright.edu}}
+%}
+
+\author{Mitesh Vivek Bhopale$^{}$
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+Web security issues remain a major challenge with numerous security concerns, Distributed Denial of Service Attack (DDos) leads among these. It was evolved from DOS and its main purpose is to consume large amount of server resources so that the server cannot provide service to normal users. Attackers usually gain access to large number of computers by exploiting the vulnerabilities to set up attack armies (i.e., Botnets). This paper will review and analyse different existing DDoS detecting techniques against different parameters, and propose a new hybrid architecture for the defence mechanism of DDoS attack.
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+With the increasingly extensively range of network applications, network security becomes increasingly important. As DDOS (distributed denial of Service) is simple, diversity, strong attack and a very high hidden, it becomes one of the most
+Popular attacks. This attack is to use large amounts of data packet flooding to the destination network, cause the target system overload or link saturation, making it impossible to provide normal services to customers.
+
+
+
+\subsection{ Principle of DDOS}
+
+DDOS attacks in understanding before a look of its predecessor: DOS (denial of Service) attacks. DOS attack is such a means of attack: the attacker within a certain time sends a large number of service requests over the network, consuming system resources or network bandwidth, occupy and beyond the processing capacity of the attacked host, leading to overload the network or system, to stop legitimate users to provide normal network services. DDOS attack is a further evolution of DOS attack. Simple DOS attack is an attack from the attack a target source is one-to-on mapping, the DDOS attacks on the introduction of the client I Server system to enhance the concept of distributed, is a many-to-one mapping. It is this change makes the DDOS attack is more powerful damage and destructive than the DOS attack. DDOS attack used a three-tier client I server architecture, The attacker use the console to issue attack orders to attack the server, control multiple host, which had been attacked the illegal invasion and installed a number of host-specific program. It receives a variety of command come from the attacker, but Also controls a large number of agencies. Forward to attack them attack the console commands, They attack the host to send a large number of useless packets occupy the attacked host's system resources and network bandwidth, leading to depletion of the attacked host or network congestion, so that paralysis does not work.
+
+ 
+
+\section{  RESEARCH AREA}
+
+
+Cloud Computing is an emerging paradigm by which we can access the applications over the Internet. It permits us to make, design, and modify applications on the web. To make cloud computing convenient and accessible to the users, some services and models have to be run in the background like Deployment models (Public, Private, Hybrid and Community) and Service models (SaaS, PaaS and IaaS). The rule behind the cloud is that any PC associated with the Internet is joined with the same pool of registering force, applications, and documents. Clients can store and get to individual documents, for example,  pictures, recordings, music and bookmarks or play amusements or word handling on a remote server as opposed to physically bearing a storage medium, for example, a DVD or thumb drive. Even the persons who has email or email client program can use the cloud email servers. Thus, desktop applications which interface with cloud email can likewise be considered cloud applications. 
+But there are some security issues. Data of the customer travels over the internet and stores in some remote locations. Customer might not know if some other users uses his data. So a cloud customer should be careful in setting up strong passwords for their accounts and a cloud service provider must be careful about the infrastructure provided to customers are free from attacks. Mainly the attacks aims at reducing the service reduction and increase the financial cost of the customer. So, particular measures have to be taken to ensure that the data is secure.
+At the point when any association decide to store information or host applications on people in general cloud, it loses its capacity to have any entrance to the servers where data is facilitated. Thus, business related information and secret information is at danger from attacks. As per a late Cloud Security Alliance Report (CSAR), insider assaults are the greatest risk in the cloud computing. Along these lines, Service providers must keep an eye the employees who have the direct access to the servers in the data center. Moreover, the server farms must be as often as possible checked for suspicious action.
+
+
+
+\section{ RELATED WORK}
+
+Many researches have been conducted and as many number of different DDoS detection techniques have been proposed. Among these was a simple and efficient hidden markov model scheme for host based anomaly intrusion detection. An entropy based anomaly detection framework to prevent DDoS attacks in cloud was reviewed, explored, investigated and proposed as an alternative solution.
+After investigating the correlativity changes of monitored network features during flood attacks, a covariance-Matrix modelling and detecting various flooding attacks was proposed. An experimented result was also analysed and presented to support a model that was instrumental to propose a model to detect flood based DoS attack in cloud environment. It gave research results which support how effectively the flood attacks are detected.
+
+Researchers also discussed how entropy based collaborative detection of DDoS attacks on community networks could effectively works in theory by applying information theory parameter called entropy rate. Different types of DDoS attacks at different layers of OSI model were discussed and presented, and finally, analysed the impact of DDoS attacks on cloud environment. The analysis of covariance model for DDoS Detection was discussed and the researchers described how the method can effectively differentiate the traffic between the normal and attack traffic. They also showed how the linear complexity of the method makes its on going identification in practical.
+
+Another detecting solution framework to predict multi-step attacks before they represent a serious security hazard is by using hidden markov model. The study based the real time intrusion prediction on optimized alerts since alerts correlations play a critical role in prediction. 
+
+The design of two independent architectures for HTTP and FTP which uses an extended hidden semi-markov model to describe the browsing habits of web searchers and detecting DDoS attacks were discussed and investigated. A survey of different mechanism of DDoS attacks, its detection, and the various approaches to handle them was discussed and explored, to enable the clients review and understand those different parameters having impacts in their decision making process while selecting the right DDoS detecting scheme .
+
+The scopes of DDoS flooding attack problems and attempts to combat them have been explored by categorizing the DDoS flooding attacks and classifying existing countermeasures based on different parameters. A comprehensive survey presented DDoS attacks, detection methods, detection tools used in wired networks and internet, and future research direction. The Security problem associated with cloud computing becomes more complex due to entering of new dimensions in problem scope related to its own main attributes. Researchers also proposed a detection scheme based on the information theory based metrics. The proposed scheme has two phases: Behavior monitoring and Detection. Based on the observation, Entropy of requests per session and the trust score for each user is calculated. DDoS attacks could be detected using the application of Dempster Shafer Theory. The theory was applied to detect DDOS threat in cloud environment. It is an approach for combining evidence in attack conditions. The effectiveness of an anomaly based detection and characterization system highly dependent on accuracy of threshold value setting. And this approach described a novel framework that deals with the detection pf variety of DDoS attacks. Cloud specific Intrusion Detection System was proposed and described a defence mechanism against the DDoS attacks. This defence mechanism Discusses how to detect the DDoS attack before it succeeds. Effectively detecting the bandwidth limit of a cloud network and the bandwidth currently in use helps to know when a DDOS attacks begin. An approach described based on fundamentals of information theory specifically Kolmogorov complexity to detecting distributed denial of service (DDoS) attacks was proposed. Despite its complexity the scheme enabled early detection.
+
+
+\section{PROPOSED WORK}
+
+\subsection{PROBLEM STATEMENT:}
+Detection of DDoS Attack is a basic measure towards defence. A sensible measure for performance of any detection method would be the area that it provides. Since such attacks is not based on exploitation of bugs or vulnerabilities but the definite volume of attack traffic , the attack traffic would be very similar to legitimate traffic  increasing the risk in spiked traffic as an attack. One reasonable metric towards detection is the rate of resource degradation. This can be identified either using a rule based system wherein frequency and entropy of traffic is monitored and corrected against the firstly defined set of rules or anomaly based system employing various Techniques to detect anomalies in the traffic.
+
+We propose a a hybrid filter-based DDoS defense
+mechanism that enables each receiver to install a network filter that stops the undesirable traffic it receives. It uses Passport as its secure source authentication system to prevent source address spoofing. Its design involves a novel closed-control and open-service architecture to battle strategic
+attacks that aim to avoid filters from being installed and to provide the service to any host in the Internet. This architecture is how a destination Hd installs a filter to block the attack flow (Hs,Hd) from a source Hs. Each cloud represents an AS boundary. Each AS has a its server that sends and receives the given requests, and hosts can only send the given requests to their access routers (e.g., Rs, Rd). It outperforms filter-based designs such as AITF, and is effective in providing continuous non-interrupted communication under a huge range of DDoS attacks.
+
+
+
+\section{CONCLUSIONS AND FUTURE WORK}
+
+The cloud computing model has the unique feature  to scale computer resources on demand, and give users a number of advantages to advance their conventional Cluster system. In addition, there is no upfront investment to update infrastructure, labour and no increasing expenses. In fact the total cost of going towards cloud is almost zero when resources are Not in use. Therefore it is not unique that academic research and industry are moving towards cloud computing. However, we being security experts, the problem we see is recurrence of the same mistakes That were made with the development of the internet. These mistakes are compared to functionality and performance which took precedence over security. Security should in fact be implemented it alongside functionality and performance.
+
+In this paper, we proposed an effective alternative
+Hybrid defence scheme against DDoS attacks. We are looking forward to apply a different approach with a comprehensive hybrid detection scheme at both the network and host level. Because, many of the available DDoS detection schemes performance found to be below the par and DDoS attacks are growing exponentially, it prompts the real need of having a comprehensive solution. We believe that this proposed scheme with double check points is expected to be a better alternative solution in mitigating the risk significantly by producing a better result.
+
+ 
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} An NTT Communications, “Successfully combating DDoS Attacks”, White Paper, August 2012
+\bibitem{c2}Sanjay B Ankali and D.V Ashoka, “Detection
+Architecture of Application Layer DDoS Attack for
+Internet”, Advanced Networking and Applications, volume
+03, issue 01, Pages 984-990, 2011.
+
+\bibitem{c3}Lau F, Rubin S H, Smith M H, et al. Distributed denial of service attacks[C] Proceedings of IEEE International Conference on Systems Cybernetics. New York IEEE Press,2000:2275-2280.
+
+\bibitem{c4} ] S. Abdelsayed, D. Glimsholt, C. Leckie, S. Ryan, and S. Shami, “An Efficient Filter for Denial-of-Service Bandwidth Attacks”, Proc. of the 46th IEEE Global Telecommunications Conference (GLOBECOM03), pp. 1353-1357, 2003.
+\bibitem{c5} P. J. Criscuolo, Distributed Denial of Service, Tribe Flood Network 2000, and Stacheldraht CIAC-2319, Department of Energy Computer Incident Advisory Capability (CIAC), UCRL-ID-136939, Rev. 1., Lawrence Livermore National Laboratory, February 14, 2000.
+\bibitem{c6} S. M. Specht, and R. B. Lee, Distributed Denial of Service: Taxonomies of Attacks, Tools and Countermeasures, in Proc. 17th International Conference on Parallel and Distributed Computing
+Systems, pp.543-550, 2004.
+
+\bibitem{c7}A.M. Lonea, Daniel Elena Popescu, Huaglory Tianfield, “Detecting DDoS attacks in cloud computing environment”, International Journal of Computer communication, ISSN 1841-9836, 8(1):70-78, February, 2013.
+\bibitem{c8}R. Chen, J. M. Park, and R. Marchany, TRACK: A novel approach for defending against distributed denial-of-service attacks, Technical Report TR-ECE-06-02, Dept. of Electrical and Computer Engineering, Virginia Tech, Feb. 2006.
+\bibitem{c9} ] X. Liu, A. Li, X. Yang, and D. Wetherall, Passport: secure and adoptable source authentication, in Proc. 5th USENIX Symposium
+on Networked Systems Design and Implementation (NSDI’08), San Francisco, CA, USA, pp. 365-378, 2008.
+
+\bibitem{c10} R. Chen, and J. M. Park, Attack Diagnosis: Throttling distributed denial-of-service attacks close to the attack sources, IEEE Int’l Conference on Computer Communications and Networks (ICCCN’05), Oct. 2005.
+
+\bibitem{c11}J. Mirkovic, G. Prier, and P. Reiher, “Attacking DDoS at the Source”, In Proc. of the 10th IEEE International Conference on Network Protocols (ICNP ’02), Washington DC, USA, 2002.
+\bibitem{c12}Biswajit Panda, Bharat Bhargava, Sourav Pati, Dayton Paul, Leszek T. Lilien, and Priyanka Meharia, “Monitoring and Managing Cloud Computing Security Using Denial of Service
+Bandwidth Allowance”, 2012.
+
+\bibitem{c13} Upma Goyal, Gayatri Bhatti, and Sandeep Mehmt, “A Dual Mechanism for Defeating DDoS Attacks in Cloud Computing Model”, Vol. 2, Issue 3, March 2013.
+\bibitem{c14} Saman Taghavi Zargar, David Tipper, “A Survey of Defense Mechanisms Against Distributed Denial of Service (DDoS) Flooding Attacks”, IEEE communications surveys and tutorials, February 2013.
+
+
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}

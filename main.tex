@@ -1,186 +1,287 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%2345678901234567890123456789012345678901234567890123456789012345678901234567890
-%        1         2         3         4         5         6         7         8
-
-\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
-                                                          % if you need a4paper
-%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
-                                                          % paper
-
-\IEEEoverridecommandlockouts                              % This command is only
-                                                          % needed if you want to
-                                                          % use the \thanks command
-\overrideIEEEmargins
-% See the \addtolength command later in the file to balance the column lengths
-% on the last page of the document
-
-
-
-% The following packages can be found on http:\\www.ctan.org
-%\usepackage{graphics} % for pdf, bitmapped graphics files
-%\usepackage{epsfig} % for postscript graphics files
-%\usepackage{mathptmx} % assumes new font selection scheme installed
-%\usepackage{times} % assumes new font selection scheme installed
-%\usepackage{amsmath} % assumes amsmath package installed
-%\usepackage{amssymb}  % assumes amsmath package installed
-
-\title{\LARGE \bf
-An analysis of DDos attacks that threaten the Cloud Environment.
- }
-
-%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
-%         \thanks{*Use the $\backslash$thanks command to put information here}\\
-%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
-%         University of Twente\\
-%         7500 AE Enschede, The Netherlands\\
-%         {\tt\small h.kwakernaak@autsubmit.com}}
-%         \hspace*{ 0.5 in}
-%         \parbox{3 in}{ \centering Pradeep Misra**
-%         \thanks{**The footnote marks may be inserted manually}\\
-%        Department of Electrical Engineering \\
-%         Wright State University\\
-%         Dayton, OH 45435, USA\\
-%         {\tt\small pmisra@cs.wright.edu}}
-%}
-
-\author{Mitesh Vivek Bhopale$^{}$
-}
-
-
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
+\title{P-BOT: Your personal PDF chatbot\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
 
+\author{\IEEEauthorblockN{1\textsuperscript{st} Shubhi Parashar}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
 
 \maketitle
-\thispagestyle{empty}
-\pagestyle{empty}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-
-Web security issues remain a major challenge with numerous security concerns, Distributed Denial of Service Attack (DDos) leads among these. It was evolved from DOS and its main purpose is to consume large amount of server resources so that the server cannot provide service to normal users. Attackers usually gain access to large number of computers by exploiting the vulnerabilities to set up attack armies (i.e., Botnets). This paper will review and analyse different existing DDoS detecting techniques against different parameters, and propose a new hybrid architecture for the defence mechanism of DDoS attack.
-
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
 \end{abstract}
 
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{INTRODUCTION}
+\section{Introduction}
+This document is a model and instructions for \LaTeX.
+Please observe the conference page limits. 
 
-With the increasingly extensively range of network applications, network security becomes increasingly important. As DDOS (distributed denial of Service) is simple, diversity, strong attack and a very high hidden, it becomes one of the most
-Popular attacks. This attack is to use large amounts of data packet flooding to the destination network, cause the target system overload or link saturation, making it impossible to provide normal services to customers.
+\section{Ease of Use}
 
+\subsection{Maintaining the Integrity of the Specifications}
 
+The IEEEtran class file is used to format your paper and style the text. All margins, 
+column widths, line spaces, and text fonts are prescribed; please do not 
+alter them. You may note peculiarities. For example, the head margin
+measures proportionately more than is customary. This measurement 
+and others are deliberate, using specifications that anticipate your paper 
+as one part of the entire proceedings, and not as an independent document. 
+Please do not revise any of the current designations.
 
-\subsection{ Principle of DDOS}
+\section{Prepare Your Paper Before Styling}
+Before you begin to format your paper, first write and save the content as a 
+separate text file. Complete all content and organizational editing before 
+formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
+proofreading, spelling and grammar.
 
-DDOS attacks in understanding before a look of its predecessor: DOS (denial of Service) attacks. DOS attack is such a means of attack: the attacker within a certain time sends a large number of service requests over the network, consuming system resources or network bandwidth, occupy and beyond the processing capacity of the attacked host, leading to overload the network or system, to stop legitimate users to provide normal network services. DDOS attack is a further evolution of DOS attack. Simple DOS attack is an attack from the attack a target source is one-to-on mapping, the DDOS attacks on the introduction of the client I Server system to enhance the concept of distributed, is a many-to-one mapping. It is this change makes the DDOS attack is more powerful damage and destructive than the DOS attack. DDOS attack used a three-tier client I server architecture, The attacker use the console to issue attack orders to attack the server, control multiple host, which had been attacked the illegal invasion and installed a number of host-specific program. It receives a variety of command come from the attacker, but Also controls a large number of agencies. Forward to attack them attack the console commands, They attack the host to send a large number of useless packets occupy the attacked host's system resources and network bandwidth, leading to depletion of the attacked host or network congestion, so that paralysis does not work.
+Keep your text and graphic files separate until after the text has been 
+formatted and styled. Do not number text heads---{\LaTeX} will do that 
+for you.
 
- 
+\subsection{Abbreviations and Acronyms}\label{AA}
+Define abbreviations and acronyms the first time they are used in the text, 
+even after they have been defined in the abstract. Abbreviations such as 
+IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
+abbreviations in the title or heads unless they are unavoidable.
 
-\section{  RESEARCH AREA}
+\subsection{Units}
+\begin{itemize}
+\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
+\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
+\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
+\end{itemize}
 
+\subsection{Equations}
+Number equations consecutively. To make your 
+equations more compact, you may use the solidus (~/~), the exp function, or 
+appropriate exponents. Italicize Roman symbols for quantities and variables, 
+but not Greek symbols. Use a long dash rather than a hyphen for a minus 
+sign. Punctuate equations with commas or periods when they are part of a 
+sentence, as in:
+\begin{equation}
+a+b=\gamma\label{eq}
+\end{equation}
 
-Cloud Computing is an emerging paradigm by which we can access the applications over the Internet. It permits us to make, design, and modify applications on the web. To make cloud computing convenient and accessible to the users, some services and models have to be run in the background like Deployment models (Public, Private, Hybrid and Community) and Service models (SaaS, PaaS and IaaS). The rule behind the cloud is that any PC associated with the Internet is joined with the same pool of registering force, applications, and documents. Clients can store and get to individual documents, for example,  pictures, recordings, music and bookmarks or play amusements or word handling on a remote server as opposed to physically bearing a storage medium, for example, a DVD or thumb drive. Even the persons who has email or email client program can use the cloud email servers. Thus, desktop applications which interface with cloud email can likewise be considered cloud applications. 
-But there are some security issues. Data of the customer travels over the internet and stores in some remote locations. Customer might not know if some other users uses his data. So a cloud customer should be careful in setting up strong passwords for their accounts and a cloud service provider must be careful about the infrastructure provided to customers are free from attacks. Mainly the attacks aims at reducing the service reduction and increase the financial cost of the customer. So, particular measures have to be taken to ensure that the data is secure.
-At the point when any association decide to store information or host applications on people in general cloud, it loses its capacity to have any entrance to the servers where data is facilitated. Thus, business related information and secret information is at danger from attacks. As per a late Cloud Security Alliance Report (CSAR), insider assaults are the greatest risk in the cloud computing. Along these lines, Service providers must keep an eye the employees who have the direct access to the servers in the data center. Moreover, the server farms must be as often as possible checked for suspicious action.
+Be sure that the 
+symbols in your equation have been defined before or immediately following 
+the equation. Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at 
+the beginning of a sentence: ``Equation \eqref{eq} is . . .''
 
+\subsection{\LaTeX-Specific Advice}
 
+Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
+of ``hard'' references (e.g., \verb|(1)|). That will make it possible
+to combine sections, add equations, or change the order of figures or
+citations without having to go through the file line by line.
 
-\section{ RELATED WORK}
+Please don't use the \verb|{eqnarray}| equation environment. Use
+\verb|{align}| or \verb|{IEEEeqnarray}| instead. The \verb|{eqnarray}|
+environment leaves unsightly spaces around relation symbols.
 
-Many researches have been conducted and as many number of different DDoS detection techniques have been proposed. Among these was a simple and efficient hidden markov model scheme for host based anomaly intrusion detection. An entropy based anomaly detection framework to prevent DDoS attacks in cloud was reviewed, explored, investigated and proposed as an alternative solution.
-After investigating the correlativity changes of monitored network features during flood attacks, a covariance-Matrix modelling and detecting various flooding attacks was proposed. An experimented result was also analysed and presented to support a model that was instrumental to propose a model to detect flood based DoS attack in cloud environment. It gave research results which support how effectively the flood attacks are detected.
+Please note that the \verb|{subequations}| environment in {\LaTeX}
+will increment the main equation counter even when there are no
+equation numbers displayed. If you forget that, you might write an
+article in which the equation numbers skip from (17) to (20), causing
+the copy editors to wonder if you've discovered a new method of
+counting.
 
-Researchers also discussed how entropy based collaborative detection of DDoS attacks on community networks could effectively works in theory by applying information theory parameter called entropy rate. Different types of DDoS attacks at different layers of OSI model were discussed and presented, and finally, analysed the impact of DDoS attacks on cloud environment. The analysis of covariance model for DDoS Detection was discussed and the researchers described how the method can effectively differentiate the traffic between the normal and attack traffic. They also showed how the linear complexity of the method makes its on going identification in practical.
+{\BibTeX} does not work by magic. It doesn't get the bibliographic
+data from thin air but from .bib files. If you use {\BibTeX} to produce a
+bibliography you must send the .bib files. 
 
-Another detecting solution framework to predict multi-step attacks before they represent a serious security hazard is by using hidden markov model. The study based the real time intrusion prediction on optimized alerts since alerts correlations play a critical role in prediction. 
+{\LaTeX} can't read your mind. If you assign the same label to a
+subsubsection and a table, you might find that Table I has been cross
+referenced as Table IV-B3. 
 
-The design of two independent architectures for HTTP and FTP which uses an extended hidden semi-markov model to describe the browsing habits of web searchers and detecting DDoS attacks were discussed and investigated. A survey of different mechanism of DDoS attacks, its detection, and the various approaches to handle them was discussed and explored, to enable the clients review and understand those different parameters having impacts in their decision making process while selecting the right DDoS detecting scheme .
+{\LaTeX} does not have precognitive abilities. If you put a
+\verb|\label| command before the command that updates the counter it's
+supposed to be using, the label will pick up the last counter to be
+cross referenced instead. In particular, a \verb|\label| command
+should not go before the caption of a figure or a table.
 
-The scopes of DDoS flooding attack problems and attempts to combat them have been explored by categorizing the DDoS flooding attacks and classifying existing countermeasures based on different parameters. A comprehensive survey presented DDoS attacks, detection methods, detection tools used in wired networks and internet, and future research direction. The Security problem associated with cloud computing becomes more complex due to entering of new dimensions in problem scope related to its own main attributes. Researchers also proposed a detection scheme based on the information theory based metrics. The proposed scheme has two phases: Behavior monitoring and Detection. Based on the observation, Entropy of requests per session and the trust score for each user is calculated. DDoS attacks could be detected using the application of Dempster Shafer Theory. The theory was applied to detect DDOS threat in cloud environment. It is an approach for combining evidence in attack conditions. The effectiveness of an anomaly based detection and characterization system highly dependent on accuracy of threshold value setting. And this approach described a novel framework that deals with the detection pf variety of DDoS attacks. Cloud specific Intrusion Detection System was proposed and described a defence mechanism against the DDoS attacks. This defence mechanism Discusses how to detect the DDoS attack before it succeeds. Effectively detecting the bandwidth limit of a cloud network and the bandwidth currently in use helps to know when a DDOS attacks begin. An approach described based on fundamentals of information theory specifically Kolmogorov complexity to detecting distributed denial of service (DDoS) attacks was proposed. Despite its complexity the scheme enabled early detection.
+Do not use \verb|\nonumber| inside the \verb|{array}| environment. It
+will not stop equation numbers inside \verb|{array}| (there won't be
+any anyway) and it might stop a wanted equation number in the
+surrounding equation.
 
+\subsection{Some Common Mistakes}\label{SCM}
+\begin{itemize}
+\item The word ``data'' is plural, not singular.
+\item The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
+\item In American English, commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
+\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
+\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
+\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
+\item Do not confuse ``imply'' and ``infer''.
+\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
+\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
+\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
+\end{itemize}
+An excellent style manual for science writers is \cite{b7}.
 
-\section{PROPOSED WORK}
+\subsection{Authors and Affiliations}
+\textbf{The class file is designed for, but not limited to, six authors.} A 
+minimum of one author is required for all conference articles. Author names 
+should be listed starting from left to right and then moving down to the 
+next line. This is the author sequence that will be used in future citations 
+and by indexing services. Names should not be listed in columns nor group by 
+affiliation. Please keep your affiliations as succinct as possible (for 
+example, do not differentiate among departments of the same organization).
 
-\subsection{PROBLEM STATEMENT:}
-Detection of DDoS Attack is a basic measure towards defence. A sensible measure for performance of any detection method would be the area that it provides. Since such attacks is not based on exploitation of bugs or vulnerabilities but the definite volume of attack traffic , the attack traffic would be very similar to legitimate traffic  increasing the risk in spiked traffic as an attack. One reasonable metric towards detection is the rate of resource degradation. This can be identified either using a rule based system wherein frequency and entropy of traffic is monitored and corrected against the firstly defined set of rules or anomaly based system employing various Techniques to detect anomalies in the traffic.
+\subsection{Identify the Headings}
+Headings, or heads, are organizational devices that guide the reader through 
+your paper. There are two types: component heads and text heads.
 
-We propose a a hybrid filter-based DDoS defense
-mechanism that enables each receiver to install a network filter that stops the undesirable traffic it receives. It uses Passport as its secure source authentication system to prevent source address spoofing. Its design involves a novel closed-control and open-service architecture to battle strategic
-attacks that aim to avoid filters from being installed and to provide the service to any host in the Internet. This architecture is how a destination Hd installs a filter to block the attack flow (Hs,Hd) from a source Hs. Each cloud represents an AS boundary. Each AS has a its server that sends and receives the given requests, and hosts can only send the given requests to their access routers (e.g., Rs, Rd). It outperforms filter-based designs such as AITF, and is effective in providing continuous non-interrupted communication under a huge range of DDoS attacks.
+Component heads identify the different components of your paper and are not 
+topically subordinate to each other. Examples include Acknowledgments and 
+References and, for these, the correct style to use is ``Heading 5''. Use 
+``figure caption'' for your Figure captions, and ``table head'' for your 
+table title. Run-in heads, such as ``Abstract'', will require you to apply a 
+style (in this case, italic) in addition to the style provided by the drop 
+down menu to differentiate the head from the text.
 
+Text heads organize the topics on a relational, hierarchical basis. For 
+example, the paper title is the primary text head because all subsequent 
+material relates and elaborates on this one topic. If there are two or more 
+sub-topics, the next level head (uppercase Roman numerals) should be used 
+and, conversely, if there are not at least two sub-topics, then no subheads 
+should be introduced.
 
+\subsection{Figures and Tables}
+\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
+bottom of columns. Avoid placing them in the middle of columns. Large 
+figures and tables may span across both columns. Figure captions should be 
+below the figures; table heads should appear above the tables. Insert 
+figures and tables after they are cited in the text. Use the abbreviation 
+``Fig.~\ref{fig}'', even at the beginning of a sentence.
 
-\section{CONCLUSIONS AND FUTURE WORK}
+\begin{table}[htbp]
+\caption{Table Type Styles}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+\cline{2-4} 
+\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+\hline
+copy& More table copy$^{\mathrm{a}}$& &  \\
+\hline
+\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
 
-The cloud computing model has the unique feature  to scale computer resources on demand, and give users a number of advantages to advance their conventional Cluster system. In addition, there is no upfront investment to update infrastructure, labour and no increasing expenses. In fact the total cost of going towards cloud is almost zero when resources are Not in use. Therefore it is not unique that academic research and industry are moving towards cloud computing. However, we being security experts, the problem we see is recurrence of the same mistakes That were made with the development of the internet. These mistakes are compared to functionality and performance which took precedence over security. Security should in fact be implemented it alongside functionality and performance.
+\begin{figure}[htbp]
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
 
-In this paper, we proposed an effective alternative
-Hybrid defence scheme against DDoS attacks. We are looking forward to apply a different approach with a comprehensive hybrid detection scheme at both the network and host level. Because, many of the available DDoS detection schemes performance found to be below the par and DDoS attacks are growing exponentially, it prompts the real need of having a comprehensive solution. We believe that this proposed scheme with double check points is expected to be a better alternative solution in mitigating the risk significantly by producing a better result.
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
+rather than symbols or abbreviations when writing Figure axis labels to 
+avoid confusing the reader. As an example, write the quantity 
+``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
+units in the label, present them within parentheses. Do not label axes only 
+with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
+\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
+quantities and units. For example, write ``Temperature (K)'', not 
+``Temperature/K''.
 
- 
+\section*{Acknowledgment}
 
-\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
-                                  % on the last page of the document manually. It shortens
-                                  % the textheight of the last page by a suitable amount.
-                                  % This command does not take effect until the next page
-                                  % so it should come on the page before the last. Make
-                                  % sure that you do not shorten the textheight too much.
+The preferred spelling of the word ``acknowledgment'' in America is without 
+an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
+G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
+acknowledgments in the unnumbered footnote on the first page.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{References}
 
+Please number citations consecutively within brackets \cite{b1}. The 
+sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
+number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
+the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
 
+Number footnotes separately in superscripts. Place the actual footnote at 
+the bottom of the column in which it was cited. Do not put footnotes in the 
+abstract or reference list. Use letters for table footnotes.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Unless there are six authors or more give all authors' names; do not use 
+``et al.''. Papers that have not been published, even if they have been 
+submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
+that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
+Capitalize only the first word in a paper title, except for proper nouns and 
+element symbols.
 
+For papers published in translation journals, please give the English 
+citation first, followed by the original foreign-language citation \cite{b6}.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-\begin{thebibliography}{99}
-
-\bibitem{c1} An NTT Communications, “Successfully combating DDoS Attacks”, White Paper, August 2012
-\bibitem{c2}Sanjay B Ankali and D.V Ashoka, “Detection
-Architecture of Application Layer DDoS Attack for
-Internet”, Advanced Networking and Applications, volume
-03, issue 01, Pages 984-990, 2011.
-
-\bibitem{c3}Lau F, Rubin S H, Smith M H, et al. Distributed denial of service attacks[C] Proceedings of IEEE International Conference on Systems Cybernetics. New York IEEE Press,2000:2275-2280.
-
-\bibitem{c4} ] S. Abdelsayed, D. Glimsholt, C. Leckie, S. Ryan, and S. Shami, “An Efficient Filter for Denial-of-Service Bandwidth Attacks”, Proc. of the 46th IEEE Global Telecommunications Conference (GLOBECOM03), pp. 1353-1357, 2003.
-\bibitem{c5} P. J. Criscuolo, Distributed Denial of Service, Tribe Flood Network 2000, and Stacheldraht CIAC-2319, Department of Energy Computer Incident Advisory Capability (CIAC), UCRL-ID-136939, Rev. 1., Lawrence Livermore National Laboratory, February 14, 2000.
-\bibitem{c6} S. M. Specht, and R. B. Lee, Distributed Denial of Service: Taxonomies of Attacks, Tools and Countermeasures, in Proc. 17th International Conference on Parallel and Distributed Computing
-Systems, pp.543-550, 2004.
-
-\bibitem{c7}A.M. Lonea, Daniel Elena Popescu, Huaglory Tianfield, “Detecting DDoS attacks in cloud computing environment”, International Journal of Computer communication, ISSN 1841-9836, 8(1):70-78, February, 2013.
-\bibitem{c8}R. Chen, J. M. Park, and R. Marchany, TRACK: A novel approach for defending against distributed denial-of-service attacks, Technical Report TR-ECE-06-02, Dept. of Electrical and Computer Engineering, Virginia Tech, Feb. 2006.
-\bibitem{c9} ] X. Liu, A. Li, X. Yang, and D. Wetherall, Passport: secure and adoptable source authentication, in Proc. 5th USENIX Symposium
-on Networked Systems Design and Implementation (NSDI’08), San Francisco, CA, USA, pp. 365-378, 2008.
-
-\bibitem{c10} R. Chen, and J. M. Park, Attack Diagnosis: Throttling distributed denial-of-service attacks close to the attack sources, IEEE Int’l Conference on Computer Communications and Networks (ICCCN’05), Oct. 2005.
-
-\bibitem{c11}J. Mirkovic, G. Prier, and P. Reiher, “Attacking DDoS at the Source”, In Proc. of the 10th IEEE International Conference on Network Protocols (ICNP ’02), Washington DC, USA, 2002.
-\bibitem{c12}Biswajit Panda, Bharat Bhargava, Sourav Pati, Dayton Paul, Leszek T. Lilien, and Priyanka Meharia, “Monitoring and Managing Cloud Computing Security Using Denial of Service
-Bandwidth Allowance”, 2012.
-
-\bibitem{c13} Upma Goyal, Gayatri Bhatti, and Sandeep Mehmt, “A Dual Mechanism for Defeating DDoS Attacks in Cloud Computing Model”, Vol. 2, Issue 3, March 2013.
-\bibitem{c14} Saman Taghavi Zargar, David Tipper, “A Survey of Defense Mechanisms Against Distributed Denial of Service (DDoS) Flooding Attacks”, IEEE communications surveys and tutorials, February 2013.
-
-
-
-
-
+\begin{thebibliography}{00}
+\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
-
-
-
+\vspace{12pt}
+\color{red}
+IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
 
 \end{document}

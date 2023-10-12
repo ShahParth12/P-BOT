@@ -79,17 +79,19 @@ A promising solution to the aforementioned challenge is the introduction of the 
 
 
 
-\section{Ease of Use}
 
-\subsection{Maintaining the Integrity of the Specifications}
+\section{Literature Survey}
 
-The IEEEtran class file is used to format your paper and style the text. All margins, 
-column widths, line spaces, and text fonts are prescribed; please do not 
-alter them. You may note peculiarities. For example, the head margin
-measures proportionately more than is customary. This measurement 
-and others are deliberate, using specifications that anticipate your paper 
-as one part of the entire proceedings, and not as an independent document. 
-Please do not revise any of the current designations.
+\subsection{History}
+
+Understanding the landscape of generative AI models is crucial for making informed choices regarding their suitability for various applications within our software platform. The foundations of generative models trace back to the 1950s when pioneering efforts led to the development of Hidden Markov Models (HMMs)[5,6] and Gaussian Mixture Models (GMMs)[7]. These early models exhibited the capability to generate sequential data, a milestone achievement with notable applications in speech recognition and time series analysis. However, it was not until the advent of deep learning in more recent years that generative models truly began to shine. Deep learning models, including neural networks, Recurrent Neural Networks (RNNs), and Convolutional Neural Networks (CNNs), have played a pivotal role in significantly enhancing the performance and versatility of generative AI. Their ability to learn complex patterns, capture long-term dependencies, and generate high-dimensional data has revolutionized the field.
+
+
+Among the earliest methods for sentence generation, N-gram language modeling[8-10] stands as a foundational approach in the realm of Natural Language Processing (NLP). N-grams represent contiguous sequences of words, symbols, or tokens in textual or speech data, defined as neighboring sequences within a given document. These N-grams are integral to a wide array of applications in NLP, extending their influence to domains such as statistical natural language processing, speech recognition, phonemes, machine translation, predictive text input, and more, where the modeling inputs rely on N-gram distributions. N-grams themselves manifest as co-occurring words or items within a specific window, advanced by a fixed number of words or tokens, often referred to as "k." These co-occurring words are termed "n-grams," with "n" signifying the length of the word string considered in constructing these n-grams. The spectrum encompasses unigrams (single words), bigrams (two-word sequences), trigrams (three-word sequences), 4-grams, 5-grams, and so forth. N-grams are harnessed extensively in NLP, text mining, and various natural language processing tasks. Language model development in NLP, for instance, leverages not just unigram models but extends to bigram and trigram models. Major tech companies, including Google and Microsoft, have ventured into constructing expansive web-scale n-gram models, which find utility in NLP tasks like spelling correction, word segmentation, and text summarization. Furthermore, N-grams are vital in crafting features for supervised Machine Learning models, such as Support Vector Machines (SVMs), Maximum Entropy (MaxEnt) models, and Naive Bayes classifiers. The fundamental concept lies in enriching the feature space with tokens like bigrams, trigrams, and more advanced n-grams, transcending the limitations of relying solely on unigrams.
+
+
+While N-gram language modeling has been instrumental in text generation, its effectiveness is often limited to shorter sentences. In response to this constraint, recurrent neural networks (RNNs) emerged as a pivotal development in the realm of language modeling tasks. RNNs introduced the capacity to model longer dependencies, thereby facilitating the generation of extended and more complex sentences. Subsequently, the introduction of Long Short-Term Memory (LSTM) networks and Gated Recurrent Unit (GRU) models marked a substantial leap forward. These advanced architectures leveraged a gating mechanism to effectively regulate memory during the training process, thereby enabling them to handle sequences of considerably greater length. The capabilities of LSTM and GRU models, which can effectively attend to around 200 tokens, extended the horizons of what could be achieved in language modeling and text generation tasks.
+
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 

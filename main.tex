@@ -23,31 +23,13 @@ should not be used}
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockN{2\textsuperscript{nd} Parth Shah}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockN{3\textsuperscript{rd} Manan Salia}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
@@ -67,8 +49,30 @@ component, formatting, style, styling, insert
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+In response to the challenges posed by digital intelligence in the digital economy, the emergence of Artificial Intelligence Generated Content (AIGC)[1-3] has been noteworthy. AIGC leverages artificial intelligence to facilitate or even replace manual content generation, generating content in accordance with user-provided keywords or specifications. The continuous advancement of large-scale model algorithms has significantly enhanced the capabilities of AIGC, rendering it a promising generative tool that enhances convenience in various aspects of our lives. Positioned as an upstream technology, AIGC possesses limitless potential to support diverse downstream applications. A pivotal transformation is underway in the realm of content creation and knowledge representation due to the widespread adoption of large artificial intelligence models such as ChatGPT[2]. AIGC, driven by these generative large AI algorithms, is at the forefront of this paradigm shift. It empowers users by aiding or even substituting human efforts in generating extensive, top-tier, and remarkably human-like content swiftly and cost-effectively, all hinging on user-provided prompts. 
+
+Generative AI[4] stands as a pivotal component within the Artificial Intelligence Generated Content (AIGC) consortium, playing a significant role in shaping the future of AI-driven interactions. Generative AI facilitates the development of conversational agents and chatbots capable of engaging in dynamic and contextually relevant interactions, thereby enhancing user experiences across a wide range of applications, from customer service to content generation. This innovative technology continues to evolve, pushing the boundaries of what AI can achieve in understanding and generating human language, ultimately paving the way for more intelligent and responsive AI systems.
+
+Leveraging Generative AI represents a strategic advantage, as it enables the integration of advanced tools capable of addressing inquiries pertaining to PDF documents. In the contemporary digital era, libraries have evolved beyond their traditional physical confines to encompass a vast array of online resources tailored to serve their patrons. A widely adopted format for these digital resources is the Portable Document Format (PDF), which facilitates the seamless dissemination of information while preserving the original document's layout and formatting. Consequently, PDFs have gained popularity, particularly for the storage and distribution of academic articles and research reports. Nevertheless, PDFs present a unique challenge within library systems, primarily stemming from their limited interactivity when compared to dynamic web pages and other digital content sources. Unlike more interactive resources, PDFs lack essential features that enable users to conduct in-document searches, annotate text, or navigate through different sections seamlessly. This deficiency can result in user frustration and disengagement, particularly when users seek more interactive functionalities. Consequently, addressing the issue of PDF interaction within library systems emerges as a pivotal endeavor. The enhancement of user engagement and satisfaction relies on the provision of more interactive PDF experiences. Libraries can significantly elevate the user experience by offering interactive PDFs, thereby fostering a greater likelihood of users returning to the library as a valuable and user-centric resource.
+
+A promising solution to the aforementioned challenge is the introduction of the P-BOT, an acronym denoting the "Personalized PDF Chat-BOT." The P-BOT represents an innovative online software platform that leverages the formidable capabilities of the ChatGPT API, offering users a more intuitive and seamless method for engaging with PDF documents. Through seamless integration of the P-BOT into library systems, patrons gain access to a chat-based interface that enables efficient and natural interactions with digital resources, including books, research papers, theses, manuals, essays, and a diverse range of academic content. P-BOT empowers users to pose queries, request assistance, and effortlessly navigate through PDF documents, thus serving as a valuable and transformative addition to library systems. This cutting-edge tool not only enhances user experiences but also streamlines the accessibility and usability of library resources, aligning perfectly with the evolving needs of modern library patrons, researchers, and scholars, thereby contributing to the advancement of knowledge dissemination. P-BOT will incorporate the feature of uploading multiple PDFs, including PDFs of substantial length, such as those spanning up to 1,000 pages.
+
+
+
+
+
+
+\section{Literature Survey}
+
+\subsection{History}
+
+Understanding the landscape of generative AI models is crucial for making informed choices regarding their suitability for various applications within our software platform. The foundations of generative models trace back to the 1950s when pioneering efforts led to the development of Hidden Markov Models (HMMs)[5,6] and Gaussian Mixture Models (GMMs)[7]. These early models exhibited the capability to generate sequential data, a milestone achievement with notable applications in speech recognition and time series analysis. However, it was not until the advent of deep learning in more recent years that generative models truly began to shine. Deep learning models, including neural networks, Recurrent Neural Networks (RNNs), and Convolutional Neural Networks (CNNs), have played a pivotal role in significantly enhancing the performance and versatility of generative AI. Their ability to learn complex patterns, capture long-term dependencies, and generate high-dimensional data has revolutionized the field.
+
+
+Among the earliest methods for sentence generation, N-gram language modeling[8-10] stands as a foundational approach in the realm of Natural Language Processing (NLP). N-grams represent contiguous sequences of words, symbols, or tokens in textual or speech data, defined as neighboring sequences within a given document. These N-grams are integral to a wide array of applications in NLP, extending their influence to domains such as statistical natural language processing, speech recognition, phonemes, machine translation, predictive text input, and more, where the modeling inputs rely on N-gram distributions. N-grams themselves manifest as co-occurring words or items within a specific window, advanced by a fixed number of words or tokens, often referred to as "k." These co-occurring words are termed "n-grams," with "n" signifying the length of the word string considered in constructing these n-grams. The spectrum encompasses unigrams (single words), bigrams (two-word sequences), trigrams (three-word sequences), 4-grams, 5-grams, and so forth. N-grams are harnessed extensively in NLP, text mining, and various natural language processing tasks. Language model development in NLP, for instance, leverages not just unigram models but extends to bigram and trigram models. Major tech companies, including Google and Microsoft, have ventured into constructing expansive web-scale n-gram models, which find utility in NLP tasks like spelling correction, word segmentation, and text summarization. Furthermore, N-grams are vital in crafting features for supervised Machine Learning models, such as Support Vector Machines (SVMs), Maximum Entropy (MaxEnt) models, and Naive Bayes classifiers. The fundamental concept lies in enriching the feature space with tokens like bigrams, trigrams, and more advanced n-grams, transcending the limitations of relying solely on unigrams.
+
+
+While N-gram language modeling has been instrumental in text generation, its effectiveness is often limited to shorter sentences. In response to this constraint, recurrent neural networks (RNNs) emerged as a pivotal development in the realm of language modeling tasks. RNNs introduced the capacity to model longer dependencies, thereby facilitating the generation of extended and more complex sentences. Subsequently, the introduction of Long Short-Term Memory (LSTM) networks and Gated Recurrent Unit (GRU) models marked a substantial leap forward. These advanced architectures leveraged a gating mechanism to effectively regulate memory during the training process, thereby enabling them to handle sequences of considerably greater length. The capabilities of LSTM and GRU models, which can effectively attend to around 200 tokens, extended the horizons of what could be achieved in language modeling and text generation tasks.
 
 \section{Proposed work}
 

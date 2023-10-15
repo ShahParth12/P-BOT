@@ -102,6 +102,22 @@ To address the challenge of overfitting when working with limited datasets, a te
 
 After a few years, it was found that BERT was significantly undertrained and an improved recipe was proposed for training BERT models, called RoBERTa, that can match or exceed the performance of all of the post-BERT methods.[RoBERTa: A Robustly Optimized BERT Pretraining Approach] RoBERTa builds upon the BERT model and fine-tunes its training methodology to achieve even better performance on various natural language understanding tasks. Modifications to the model are relatively straightforward. Firstly, A longer training duration with the use of larger batches, along with an increase in the volume of training data. Secondly, removal the next sentence prediction objective from the training process. Thirdly, broadening the scope of training by including longer sequences in the training data. Lastly, introduction of dynamic changes to the masking pattern applied to the training data. These adjustments are aimed at enhancing the model's training efficiency and overall performance.
 
+TEXT EXTRACTION
+
+During the late 1990s, when the usage of PDF documents was on the rise, there were initial efforts to extract text from PDFs. These early text extraction techniques typically revolved around dissecting the PDF structure to identify and retrieve text content. Nevertheless, these methods had certain limitations, particularly in terms of accuracy and their ability to preserve document formatting.
+
+OCR, short for Optical Character Recognition[Historical Review of OCR Research and Development], was introduced to meet the critical need for converting printed and handwritten text into digital format. Its primary goal was to facilitate the transition from paper-based content to the digital world, enhancing accessibility, editability, and searchability. OCR not only automated data entry, reducing errors and costs, but also streamlined information retrieval from scanned documents and archives.This technology facilitates the extraction of text from tangible documents, images, and PDFs, ultimately rendering the content searchable, editable, and available for diverse applications. Furthermore, it played a pivotal role in enhancing text accessibility for individuals with visual impairments through its ability to convert text into a readable format for assistive technologies. This technology's introduction represented a groundbreaking transformation in how we manage text-based information, acting as a vital link between the analog and digital realms.
+
+Tesseract OCR, often referred to simply as Tesseract, is an open-source Optical Character Recognition engine created by Google. It has gained recognition for its exceptional precision in identifying printed text within scanned documents, images, and PDFs. Tesseract offers compatibility with a wide array of languages and is capable of extracting text from diverse fonts and text sizes. Its adaptability and ongoing enhancements have solidified its status as a favored solution for tasks such as automating data entry, digitizing printed resources, enabling text searches within images, and supporting a variety of applications that necessitate the transformation of visual text into machine-readable text.
+
+Machine learning (ML) and deep learning have surpassed traditional OCR technology due to their adaptability, superior accuracy, and contextual comprehension of text. Unlike OCR, which often operates within rigid constraints of predefined formats and fonts, ML and deep learning models are highly versatile, capable of accommodating a wide range of document layouts, languages, and even handwritten content. This versatility allows them to extract text with greater precision, making them well-suited for handling complex documents. Furthermore, these models can continually enhance their performance by fine-tuning with new data, ensuring their ongoing relevance and effectiveness in an ever-evolving digital landscape.
+
+The utilization of machine learning and deep learning methods, which encompass natural language processing (NLP) models, has resulted in substantial enhancements in the process of extracting text from PDFs. These advanced models are capable of identifying and extracting text content from intricate PDF documents, including those with multiple columns, tables, and a wide variety of fonts.
+
+
+PROCESSING OF DATA
+
+
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 

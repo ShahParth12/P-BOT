@@ -87,10 +87,17 @@ The utilization of machine learning and deep learning methods, including natural
 
 Understanding the landscape of generative AI models is crucial for making informed choices regarding their suitability for various applications within our software platform. The foundations of generative models trace back to the 1950s when pioneering efforts led to the development of Hidden Markov Models (HMMs)[5,6] and Gaussian Mixture Models (GMMs)[7]. These early models exhibited the capability to generate sequential data, a milestone achievement with notable applications in speech recognition and time series analysis. However, it was not until the advent of deep learning in more recent years that generative models truly began to shine. Deep learning models, including neural networks, Recurrent Neural Networks (RNNs), and Convolutional Neural Networks (CNNs), have played a pivotal role in significantly enhancing the performance and versatility of generative AI. Their ability to learn complex patterns, capture long-term dependencies, and generate high-dimensional data has revolutionized the field.
 
+\subsubsection{Language Models}
 
+Statistical language models play a fundamental role in natural language processing by estimating the probability distribution of natural language. These models are dedicated to estimating the probability of generating a given sentence or predicting the content of the next part of a sentence, which is essential for various downstream NLP tasks. Various modeling methods have been developed to address this, reflecting the technical advancements in the field. Early n-gram language models rely on frequency statistics of n-grams, but they have limitations in handling larger context and symbol combinations. Neural language models (NLM) introduced more complex structures, such as multilayer perceptrons, convolutional neural networks, and recurrent neural networks, improving the representation of words and their context-aware dynamic nature through low-dimensional embeddings.
+
+Since 2018, pre-trained language models (PLM) have gained attention, particularly those based on self-supervised learning over large-scale text data. Notable models like ELMo, BERT, and GPT-3 have demonstrated remarkable performance in various NLP tasks. PLMs offer dynamic context-aware representations and serve as a unified framework for NLP tasks. They have three typical model structures: autoregressive LM, autoencoding LM, and hybrid LM, represented by GPT, BERT, and T5, respectively. Autoregressive LM focuses on token-by-token word prediction, while autoencoding LM masks words in sentences, employs bidirectional encoding, and predicts the masked words based on context. Hybrid LM combines these approaches. BERT's success has led to its widespread adoption in academia and industry due to its strong performance in NLP tasks.
+
+Leveraging the Transformer architecture, OpenAI has developed a series of GPT models, including GPT-1, GPT-2, GPT-3, and GPT-4. These models have demonstrated improvements in language understanding and generation, with GPT-3 being particularly noteworthy for its excellence in text generation tasks and support for zero-shot and few-shot learning scenarios. OpenAI has further advanced large-scale language models with models like GPT-3.5 series, which includes Code-davinci and Text-davinci models. These models have enabled users to leverage advanced language capabilities through APIs and playgrounds. GPT-4, the latest milestone, is a large multimodal model, showing enhanced capabilities in understanding nuanced instructions.
+
+The development of artificial intelligence has highlighted the power of large models in learning complex features and patterns from raw data, ultimately leading to stronger data understanding and generation capabilities. These large-scale pre-trained language models exhibit better generalization and general task processing capabilities. The autoregressive language modeling approach adopted by GPT-3 and its successors has proven advantageous in directly utilizing natural language to describe various tasks in different domains. Researchers are now eager to explore the transparency and capabilities of GPT-4 in further advancing the field of artificial intelligence. These advancements signify the critical role that language models play in modern NLP and AI technologies.
 
 Among the earliest methods for sentence generation, N-gram language modeling[8-10] stands as a foundational approach in the realm of Natural Language Processing (NLP). N-grams represent contiguous sequences of words, symbols, or tokens in textual or speech data, defined as neighboring sequences within a given document. These N-grams are integral to a wide array of applications in NLP, extending their influence to domains such as statistical natural language processing, speech recognition, phonemes, machine translation, predictive text input, and more, where the modeling inputs rely on N-gram distributions. N-grams themselves manifest as co-occurring words or items within a specific window, advanced by a fixed number of words or tokens, often referred to as "k." These co-occurring words are termed "n-grams," with "n" signifying the length of the word string considered in constructing these n-grams. The spectrum encompasses unigrams (single words), bigrams (two-word sequences), trigrams (three-word sequences), 4-grams, 5-grams, and so forth. N-grams are harnessed extensively in NLP, text mining, and various natural language processing tasks. Language model development in NLP, for instance, leverages not just unigram models but extends to bigram and trigram models. Major tech companies, including Google and Microsoft, have ventured into constructing expansive web-scale n-gram models, which find utility in NLP tasks like spelling correction, word segmentation, and text summarization. Furthermore, N-grams are vital in crafting features for supervised Machine Learning models, such as Support Vector Machines (SVMs), Maximum Entropy (MaxEnt) models, and Naive Bayes classifiers. The fundamental concept lies in enriching the feature space with tokens like bigrams, trigrams, and more advanced n-grams, transcending the limitations of relying solely on unigrams.
-
 
 
 
@@ -187,6 +194,12 @@ Based on the findings of a comparative analysis, each of these text extraction m
 
 Both PyMuPDF and pdfminer.six exhibited similar tf-idf and cosine similarity scores, with PyMuPDF having a slightly higher Levenshtein distance than pdfminer.six. However, it's important to note that pdfminer.six required significantly more time to complete the extraction process when compared to PyMuPDF. Consequently, PyMuPDF emerges as the optimal choice for text extraction from PDF documents.
 
+\begin{figure}[htp]
+    \includegraphics[width=10cm]{Flowchart}
+    \caption{The Transformer - model architecture. from Ashish Vaswani et. al. [Attention is all you need]}
+    \label{fig:galaxy}
+\end{figure}
+
 \subsection{Processing of Data}
 
 The extraction of raw text from PDFs necessitates careful processing for effective storage and semantic search. An integral component of this process involves text chunking, a technique used to divide large text segments into smaller, more manageable units. Our examination highlights the impact of various chunking methods, including the NLTK Sentence Tokenizer, Spacy Sentence Splitter, and Langchain Character Text Splitter. Comparative analysis reveals that NLTK and Spacy consistently produce smaller, more digestible sentence segments, whereas Langchain generates larger and denser clusters of text.
@@ -267,36 +280,137 @@ acknowledgments in the unnumbered footnote on the first page.
 
 \section*{References}
 
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
+[1] J. Wu, W. Gan, Z. Chen, S. Wan, and H. Lin, “AI-generated content (AIGC): A survey,” arXiv preprint arXiv:2304.06632, pp. 1–17, 2023.
 
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
+[2] Wang, Y., Pan, Y., Yan, M., Su, Z., and Luan, T. H. (2023). A Survey on ChatGPT: AI-Generated Contents, Challenges, and Solutions. arXiv preprint arXiv:2305.18339.
 
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
+[3] Wu, T., He, S., Liu, J., Sun, S., Liu, K., Han, Q.L. and Tang, Y., 2023. A brief overview of ChatGPT: The history, status quo and potential future development. IEEE/CAA Journal of Automatica Sinica, 10(5), pp.1122-1136.
 
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
+[4] Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. "ChatGPT is not all you need. A State of the Art Review of large Generative AI models." arXiv preprint arXiv:2301.04655 (2023).
 
-\begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+[5] L. Rabiner and B. Juang, "An introduction to hidden Markov models," in IEEE ASSP Magazine, vol. 3, no. 1, pp. 4-16, Jan 1986, doi: 10.1109/MASSP.1986.1165342.
+
+[6] M. I. Mohd Yusoff, I. Mohamed and M. R. Abu Bakar, "Hidden Markov models: An insight," Proceedings of the 6th International Conference on Information Technology and Multimedia, Putrajaya, Malaysia, 2014, pp. 259-264, doi: 10.1109/ICIMU.2014.7066641.
+
+[7] Viroli, C., and McLachlan, G. J. (2017). Deep Gaussian mixture models. Statistics and Computing. doi:10.1007/s11222-017-9793-z
+
+[8] Pauls, Adam, and Dan Klein. "Faster and smaller n-gram language models." Proceedings of the 49th annual meeting of the Association for Computational Linguistics: Human Language Technologies. 2011.
+
+[9] Niesler, Thomas R., and Philip C. Woodland. "A variable-length category-based n-gram language model." 1996 IEEE International Conference on Acoustics, Speech, and Signal Processing Conference Proceedings. Vol. 1. IEEE, 1996.
+
+[10] Bickel, Steffen, Peter Haider, and Tobias Scheffer. "Predicting sentences using n-gram language models." Proceedings of human language technology conference and conference on empirical methods in natural language processing. 2005.
+
+[11] Zong, Mingyu, and Bhaskar Krishnamachari. "A survey on GPT-3." arXiv preprint arXiv:2212.00857 (2022).
+
+[12] Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. "Improving language understanding by generative pre-training." (2018).
+
+[13] Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever, I., 2019. Language models are unsupervised multitask learners. OpenAI blog, 1(8), p.9.
+
+[14] Y. Zhang and Q. Yang, “ A survey on multi-task learning,” IEEE Trans. Knowl. Data Eng., vol.34, no.12, pp.5586–5609, Dec. 2022.
+
+[15] Y. Q. Wang, Q. M. Yao, J. T. Kwok, and L. M. Ni, “Generalizing from a few examples: A survey on few-shot learning,” ACM Comput. Surv., vol.53, no. 3, p. 63, May 2021.
+
+[16] M. Khosla, A. Anand, and V. Setty, “A comprehensive comparison of unsupervised network representation learning methods,” arXiv preprint arXiv: 1903.07902, 2019.
+
+
+[17] C. Ieracitano, A. Paviglianiti, M. Campolo, A. Hussain, E. Pasero, and F. C. Morabito, “ A novel automatic classification system based on hybrid unsupervised and supervised machine learning for electrospun nanofibers,” IEEE/CAA J. Autom. Sinica, vol. 8, no. 1, pp.64–76, Jan. 2021.
+
+[18] T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei, “Language models are few-shot learners,” in Proc. 34th Int. Conf. Neural Information Processing Systems, Vancouver, Canada, 2020, pp. 1877–1901.
+
+[19] C. Finn, P. Abbeel, and S. Levine, “Model-agnostic meta-learning for fast adaptation of deep networks,” in Proc. 34th Int. Conf. Machine Learning, Sydney, Australia, 2017, pp. 1126–1135.
+
+[20] J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson, “A survey of meta-reinforcement learning,” arXiv preprint arXiv: 2301.08028, 2023.
+
+[21] Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X. Sun, J. J. Xu, L. Li, and Z. F. Sui, “A survey on in-context learning,” arXiv preprint arXiv: 2301.00234, 2022.
+
+[22] L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe, “ Training language models to follow instructions with human feedback,” 
+arXiv preprint arXiv: 2203.02155, 2022.
+
+[23]OpenAI, “Gpt-4 technical report,” 2023. [Online]. Available: https:// cdn.openai.com/papers/gpt-4.pdf.
+
+[24] Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de Las Casas, Lisa Anne Hendricks, Johannes Welbl, Aidan Clark, et al. Training compute-optimal large language models. arXiv preprint arXiv:2203.15556, 2022.
+
+[25] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. PaLM: Scaling language modeling with pathways. arXiv preprint arXiv:2204.02311, 2022.
+
+[26] Jack W Rae, Sebastian Borgeaud, Trevor Cai, Katie Millican, Jordan Hoffmann, Francis Song, John Aslanides, Sarah Henderson, Roman Ring, Susannah Young, et al. Scaling language models: Methods, analysis and insights from training gopher. arXiv preprint arXiv:2112.11446, 2021.
+
+[27] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed Chi, Quoc Le, and Denny Zhou. Chain-of-thought prompting elicits reasoning in large language models. NeurIPS, 2022.
+
+[28] Jiaxin Huang, Shixiang Shane Gu, Le Hou, Yuexin Wu, Xuezhi Wang, Hongkun Yu, and Jiawei Han. Large language models can self-improve. arXiv preprint arXiv:2210.11610, 2022.
+
+[29] Z. Liang and S. Zhang. "Generating and Measuring Similar Sentences Using Long Short-Term Memory and Generative Adversarial Networks," in IEEE Access, vol. 9, pp. 112637-112654, 2021, doi: 10.1109/ACCESS.2021.3103669.
+
+[30] Singh, Sushant, and Ausif Mahmood. "The NLP cookbook: modern recipes for transformer-based deep learning architectures." IEEE Access 9 (2021): 68675-68702.
+
+[31] Jin, Kyohoon, et al. "Generative Data Augmentation via Wasserstein Autoencoder for Text Classification." 2022 13th International Conference on Information and Communication Technology Convergence (ICTC). IEEE, 2022.
+
+[32] Chen, Yiren, et al. "Improving bert with self-supervised attention." IEEE Access 9 (2021): 144129-144139.
+
+[33] Kowsher, Md, et al. "Bangla-BERT: transformer-based efficient model for transfer learning and language understanding." IEEE Access 10 (2022): 91855-91870.
+
+[34] Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
+
+[35] Wolf, Thomas, et al. "Transformers: State-of-the-art natural language processing." Proceedings of the 2020 conference on empirical methods in natural language processing: system demonstrations. 2020.
+
+[36] H. Palangi, L. Deng, Y. Shen, J. Gao, X. He, J. Chen, X. Song, and R. Ward, ‘‘Deep sentence embedding using long short-term memory net-works: Analysis and application to information retrieval,’’ IEEE/ACM Trans. Audio, Speech, Language Process., vol. 24, no. 4, pp. 694–707, Apr. 2016.
+
+[37] S. Hochreiter and J. Schmidhuber, ‘‘Long short-term memory,’’ Neural Comput., vol. 9, no. 8, pp. 1735–1780, 1997.
+
+[38] A. Krizhevsky, I. Sutskever, and G. E. Hinton, ‘‘ImageNet classification with deep convolutional neural networks,’’ Commun. ACM, vol. 60, no. 6, pp. 84–90, Jun. 2017.
+
+[39] T. Mikolov, M. Karafiát, L. Burget, J. Černocký, and S. Khudanpur, ‘‘Recurrent neural network based language model,’’ in Proc. 11th Annu. Conf. Int. Speech Commun. Assoc., Chiba, Japan, 2010, pp. 1045–1048.
+
+[40] I. Sutskever, O. Vinyals, and Q. V. Le, ‘‘Sequence to sequence learning with neural networks,’’ in Proc. Neural Inf. Process. Syst., Montreal, QC, Canada, 2014, pp. 3104–3112.
+
+[41] S. R. Zhang, Z. Y. Liang, and J. Lin, ‘‘Sentence similarity measurement with convolutional neural networks using semantic and syntactic features,’’ Comput., Mater. Continua, vol. 63, no. 2, pp. 943–957, 2020.
+
+[42] X. Liu, P. He, W. Chen, and J. Gao, ‘‘Multi-task deep neural networks for natural language understanding,’’ in Proc. 57th Annu. Meeting Assoc. Comput. Linguistics, Florence, Italy, 2019, pp. 4478–4496.
+
+[43] J. Mueller and A. Thyagarajan, ‘‘Siamese recurrent architectures for learn-ing sentence similarity,’’ in Proc. 13th Conf. Artif. Intell., Phoenix, AZ, USA, 2016, pp. 2786–2792.
+
+[44] I. J. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, ‘‘Generative adversarial nets,’’ain Proc. Neural Inf. Process. NIPS, Montreal, QC, Canada, 2014, pp. 2672–2680.
+
+[45] J. Gui, Z. Sun, Y. Wen, D. Tao, and J. Ye, ‘‘A review on generative adversarial networks: Algorithms, theory, and applications,’’ Comput. Res. Repository, vol. abs/2001.06937, pp. 1–28, Jan. 2020.
+
+[46] Z. Zhang, S. Liu, M. Li, M. Zhou, and E. Chen, ‘‘Bidirectional generative adversarial networks for neural machine translation,’’ in Proc. Assoc. Comput. Linguistics, Brussels, Belgium, no. 1, 2018, pp. 190–199.
+
+[47] Y. Fu, Y. S. Feng, and J. P. Cunningham, ‘‘Paraphrase generation with latent bag of words,’’ in Proc. Neural Inf. Process. NIPS, Vancouver, BC, Canada, 2019, pp. 13623–13634.
+
+[48] C.-Y. Lin and E. Hovy, ‘‘Manual and automatic evaluation of summaries,’’ in Proc. Workshop Autom. Summarization (ACL), Barcelona, Spain, 2004, pp. 74–81.
+
+[49] S. Bird, E. Klein, and E. Loper, Natural Language Processing With Python: Analyzing Text With the Natural Language Toolkit, vol. 44, 1st ed. Sebastopol, CA, USA: O’Reilly Media, 2009, pp. 421–424.
+
+[50] C. Manning, M. Surdeanu, J. Bauer, J. Finkel, S. Bethard, and D. McClosky, ‘‘The Stanford CoreNLP natural language processing toolkit,’’ in Proc. 52nd Annu. Meeting Assoc. Comput. Linguistics, Syst. Demonstrations, Baltimore, MD, USA, 2014, pp. 55–60.
+
+[51] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, ‘‘BERT: Pre-training of deep bidirectional transformers for language understanding,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Tech-nol., vol. 1, Jun. 2019, pp. 4171–4186.
+
+[52] Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, ‘‘RoBERTa: A robustly optimized BERT pretraining approach,’’ 2019, arXiv:1907.11692. [Online]. Available: http://arxiv.org/abs/1907.11692
+
+[53] X. Wu, S. Lv, L. Zang, J. Han, and S. Hu, ‘‘Conditional bert contextual aug-mentation,’’ in Proc. Int. Conf. Comput. Sci. Cham, Switzerland: Springer,2019, pp. 84–95.
+
+[54] Z. Yang, D. Yang, C. Dyer, X. He, A. Smola, and E. Hovy, ‘‘Hierarchical attention networks for document classification,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Technol., 2016, pp. 1480–1489.
+
+[55] Z. Lin, M. Feng, C. N. dos Santos, M. Yu, B. Xiang, B. Zhou, and Y. Bengio, ‘‘A structured self-attentive sentence embedding,’’ 2017, arXiv:1703.03130.
+
+[56] A. Wang, A. Singh, J. Michael, F. Hill, O. Levy, and S. Bowman, ‘‘Glue: A multi-task benchmark and analysis platform for natural language under-standing,’’ in Proc. EMNLP Workshop BlackboxNLP, Analyzing Interpret-ing Neural Netw. (NLP), 2018, pp. 353–355.
+
+[57] Hu, Dichao. ”An introductory survey on attention mechanisms in NLP problems.” Proceedings of SAI Intelligent Systems Conference. Springer, Cham, 2019.
+
+[58] Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. ”Effective approaches to attention-based neural machine translation.” arXiv preprint arXiv:1508.04025 (2015).
+
+
+
+%\begin{thebibliography}{00}
+%\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+%\end{thebibliography}
+%\vspace{12pt}
+%\color{red}
+
 
 \end{document}

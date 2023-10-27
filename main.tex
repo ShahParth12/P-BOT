@@ -173,6 +173,8 @@ Training the Transformer entails the minimization of a loss function, typically 
     \label{fig:galaxy}
 \end{figure}
 
+ELMo, short for "Embeddings from Language Models, introduced in 2018"[Deep contextualized word representations] is a form of word embeddings that provides a unique representation for each token within a sentence, taking into account the entire input sentence. These representations are constructed using a bidirectional Long Short-Term Memory (LSTM) network, which is trained with a coupled language model objective on a substantial text corpus.What sets ELMo apart is its depth, as it encompasses information from all the internal layers of the bidirectional LSTM. By amalgamating these internal states, ELMo offers comprehensive word representations that capture the nuanced and context-specific aspects of word meaning and syntax.Notably, ELMo representations have demonstrated substantial enhancements in performance across a range of language understanding tasks, including tasks like textual entailment, question answering, and sentiment analysis.
+ELMo is a model that enhances the performance of various natural language processing (NLP) tasks. It builds upon the Bidirectional Attention Flow model (BiDAF) by introducing several improvements, including the incorporation of a self-attention layer, simplification of pooling operations, and the substitution of LSTMs with gated recurrent units (GRUs). When ELMo is integrated into the baseline model, it results in a substantial 4.75 percent improvement in the F1 score on the test set, equating to a remarkable 24.9 percent relative reduction in errors compared to the baseline model. Furthermore, the utilization of an ensemble comprising 11 models further elevates the F1 score to 87.4 percent, establishing ELMo as the leading model in the field at the time of its introduction. Notably, ELMo surpasses other models like CoVe when it comes to enhancing the baseline model's performance.
 
 
 Bidirectional Encoder Representations from Transformers (BERT), introduced in 2018, stands as a remarkable milestone in the field of natural language processing (NLP). Its core innovation lies in its ability to pre-train comprehensive, bidirectional word understandings from unannotated text. Unlike its predecessors, BERT considers both left and right context in all its layers, rendering it exceptionally adaptable for a wide range of NLP tasks.
@@ -183,6 +185,10 @@ To address challenges like overfitting, new techniques have been introduced, inc
 
 
 However, the journey didn't stop at BERT, as it was found that the model was significantly undertrained. An improved recipe for training BERT models, known as RoBERTa, was proposed. RoBERTa builds upon the BERT model and fine-tunes its training methodology to achieve even better performance in various natural language understanding tasks. The modifications include a longer training duration with larger batches, an increase in the volume of training data, the removal of the next sentence prediction objective, broader scope by incorporating longer sequences in the training data, and dynamic changes to the masking pattern applied during training. These adjustments are meticulously designed to enhance the model's training efficiency and overall performance, marking yet another milestone in the ever-evolving landscape of NLP.
+
+BART, introduced in 2019, is a highly capable pretrained language generation model known for its proficiency in tasks like summarization, dialogue responses, and question answering.[BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension] It's been trained on extensive datasets, including XSum, ConvAI2, and CNN/DM. BART merges bidirectional and auto-regressive functions, enabling it to both comprehend and produce text in a bidirectional manner. This versatility makes it applicable to a wide range of natural language processing tasks. BART can generate text sequentially from left to right (auto-regressively) while also having the ability to comprehend text in both directions.BART excels at producing abstractive summaries that are both linguistically sound and factually precise. It effectively incorporates information from the source document and background knowledge, resulting in high-quality summaries. Qualitative evaluations have confirmed BART's robust natural language understanding and generation capabilities.
+The development of BART was driven by the objective of advancing the field of natural language processing. Its unique combination of bidirectional and auto-regressive capabilities was aimed at making it a versatile model suitable for a broad spectrum of tasks related to language understanding and generation. Its primary focus was on improving text summarization, machine translation, and document understanding. BART followed the established two-step approach of pretraining and fine-tuning, benefiting from the successes of models like BERT and GPT. Its specific emphasis lay in excelling at abstractive text summarization, with the aim of producing coherent and informative summaries. Furthermore, BART underscored the importance of robust language comprehension and generation, rendering it valuable for a wide range of applications in natural language processing.
+
 
 In 2018, the groundbreaking GPT-1 model, also known as GPT(Generative Pretrained Transformers), made its debut, primarily focusing on the training of a generative language model within the innovative Transformer framework using unsupervised learning. This approach aimed to overcome the challenges posed by the scarcity of labeled data by capitalizing on vast amounts of unlabeled and diverse examples. GPT-1, characterized as an auto-regressive decoder-only Transformer, incorporated the self-attention mechanism into its architecture. The model's training began with the BooksCorpus dataset, followed by fine-tuning for specific downstream tasks. Impressively, it demonstrated its versatility by surpassing state-of-the-art models in 9 out of 12 test datasets, spanning various Natural Language Processing (NLP) categories, hinting at a promising direction for advancing Artificial General Intelligence (AGI).
 
@@ -284,12 +290,9 @@ quantities and units. For example, write ``Temperature (K)'', not
 
 \section*{Acknowledgment}
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
 
-\section*{References}
+
+%\section*{References}
 
 
 \begin{thebibliography}{00}

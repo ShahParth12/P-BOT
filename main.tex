@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{multirow}
 \usepackage{array}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -88,45 +89,14 @@ Understanding the landscape of generative AI models is crucial for making inform
 
 \subsubsection{Language Models}
 
-Statistical language models play a fundamental role in natural language processing by estimating the probability distribution of natural language. These models are dedicated to estimating the probability of generating a given sentence or predicting the content of the next part of a sentence, which is essential for various downstream NLP tasks. Various modeling methods have been developed to address this, reflecting the technical advancements in the field. Early n-gram language models rely on frequency statistics of n-grams, but they have limitations in handling larger context and symbol combinations. Neural language models (NLM) introduced more complex structures[10], such as multilayer perceptrons, convolutional neural networks, and recurrent neural networks, improving the representation of words and their context-aware dynamic nature through low-dimensional embeddings.
-
-Since 2018, pre-trained language models (PLM) have gained attention, particularly those based on self-supervised learning over large-scale text data. Notable models like ELMo, BERT, and GPT-3 have demonstrated remarkable performance in various NLP tasks. PLMs offer dynamic context-aware representations and serve as a unified framework for NLP tasks. They have three typical model structures: autoregressive LM, autoencoding LM, and hybrid LM, represented by GPT, BERT, and T5, respectively. Autoregressive LM focuses on token-by-token word prediction, while autoencoding LM masks words in sentences, employs bidirectional encoding, and predicts the masked words based on context. Hybrid LM combines these approaches. BERT's success has led to its widespread adoption in academia and industry due to its strong performance in NLP tasks.
-
-Leveraging the Transformer architecture, OpenAI has developed a series of GPT models, including GPT-1, GPT-2, GPT-3, and GPT-4. These models have demonstrated improvements in language understanding and generation, with GPT-3 being particularly noteworthy for its excellence in text generation tasks and support for zero-shot and few-shot learning scenarios. OpenAI has further advanced large-scale language models with models like GPT-3.5 series, which includes Code-davinci and Text-davinci models. These models have enabled users to leverage advanced language capabilities through APIs and playgrounds. GPT-4, the latest milestone, is a large multimodal model, showing enhanced capabilities in understanding nuanced instructions.
-
-The development of artificial intelligence has highlighted the power of large models in learning complex features and patterns from raw data, ultimately leading to stronger data understanding and generation capabilities. These large-scale pre-trained language models exhibit better generalization and general task processing capabilities. The autoregressive language modeling approach adopted by GPT-3 and its successors has proven advantageous in directly utilizing natural language to describe various tasks in different domains. Researchers are now eager to explore the transparency and capabilities of GPT-4 in further advancing the field of artificial intelligence. These advancements signify the critical role that language models play in modern NLP and AI technologies.
-
-Among the earliest methods for sentence generation, N-gram language modeling[11-13] stands as a foundational approach in the realm of Natural Language Processing (NLP). N-grams represent contiguous sequences of words, symbols, or tokens in textual or speech data, defined as neighboring sequences within a given document. These N-grams are integral to a wide array of applications in NLP, extending their influence to domains such as statistical natural language processing, speech recognition, phonemes, machine translation, predictive text input, and more, where the modeling inputs rely on N-gram distributions. N-grams themselves manifest as co-occurring words or items within a specific window, advanced by a fixed number of words or tokens, often referred to as "k." These co-occurring words are termed "n-grams," with "n" signifying the length of the word string considered in constructing these n-grams. The spectrum encompasses unigrams (single words), bigrams (two-word sequences), trigrams (three-word sequences), 4-grams, 5-grams, and so forth. N-grams are harnessed extensively in NLP, text mining, and various natural language processing tasks. Language model development in NLP, for instance, leverages not just unigram models but extends to bigram and trigram models. Major tech companies, including Google and Microsoft, have ventured into constructing expansive web-scale n-gram models, which find utility in NLP tasks like spelling correction, word segmentation, and text summarization. Furthermore, N-grams are vital in crafting features for supervised Machine Learning models, such as Support Vector Machines (SVMs), Maximum Entropy (MaxEnt) models, and Naive Bayes classifiers. The fundamental concept lies in enriching the feature space with tokens like bigrams, trigrams, and more advanced n-grams, transcending the limitations of relying solely on unigrams.
+Statistical language models play a fundamental role in natural language processing by estimating the probability distribution of natural language. These models are dedicated to estimating the probability of generating a given sentence or predicting the content of the next part of a sentence, which is essential for various downstream NLP tasks. Various modeling methods have been developed to address this, reflecting the technical advancements in the field. Early n-gram language models rely on frequency statistics of n-grams, but they have limitations in handling larger context and symbol combinations. Neural language models (NLM) introduced more complex structures, such as multilayer perceptrons, convolutional neural networks, and recurrent neural networks, improving the representation of words and their context-aware dynamic nature through low-dimensional embeddings.
 
 
-\begin{figure*}
-    \centering
-    \includegraphics[width=\textwidth]{LMTYPES}
-    \caption{There three typical types of PLM: autoregressive LM, autoencoder LM and hybrid LM. Their working mechanisms are listed and compared in this
-table taken from Tianyu Wu et al. [A Brief Overview of ChatGPT: The History, Status Quo and Potential Future Development]}
-    \label{fig:your_image_label}
-\end{figure*}
+
+Among the earliest methods for sentence generation, N-gram language modeling[10-12] stands as a foundational approach in the realm of Natural Language Processing (NLP). N-grams represent contiguous sequences of words, symbols, or tokens in textual or speech data, defined as neighboring sequences within a given document. These N-grams are integral to a wide array of applications in NLP, extending their influence to domains such as statistical natural language processing, speech recognition, phonemes, machine translation, predictive text input, and more, where the modeling inputs rely on N-gram distributions. N-grams themselves manifest as co-occurring words or items within a specific window, advanced by a fixed number of words or tokens, often referred to as "k." These co-occurring words are termed "n-grams," with "n" signifying the length of the word string considered in constructing these n-grams. The spectrum encompasses unigrams (single words), bigrams (two-word sequences), trigrams (three-word sequences), 4-grams, 5-grams, and so forth. N-grams are harnessed extensively in NLP, text mining, and various natural language processing tasks. Language model development in NLP, for instance, leverages not just unigram models but extends to bigram and trigram models. Major tech companies, including Google and Microsoft, have ventured into constructing expansive web-scale n-gram models, which find utility in NLP tasks like spelling correction, word segmentation, and text summarization. Furthermore, N-grams are vital in crafting features for supervised Machine Learning models, such as Support Vector Machines (SVMs), Maximum Entropy (MaxEnt) models, and Naive Bayes classifiers. The fundamental concept lies in enriching the feature space with tokens like bigrams, trigrams, and more advanced n-grams, transcending the limitations of relying solely on unigrams.
 
 
-\begin{table*}
-    \centering
-    \caption{Comparison of Pre-trained Language Models}
-    \begin{tabular}{|p{2cm}|p{3cm}|p{3cm}|p{2cm}|p{2cm}|p{2 cm}|}
-        \hline
-\center
-        \textbf{Aspect} & \textbf{Encoding/Decoding Strategy} & \textbf{Input-Output Example} & \textbf{Learning Paradigm} & \textbf{Support Tasks} & \textbf{Representative Model} \\
-        \hline
-\center
-        Autoregressive LM & Autoregressive models generate text sequentially, predicting one token at a time based on previous tokens. & Input text is encoded step by step, generating output sequentially. & Unidirectional prediction from left to right or right to left. & Language modeling, text generation, and sequence completion tasks. & GPT-3 (Generative Pre-trained Transformer 3) \\
-        \hline
-\center
-        Autoencoder LM & Autoencoder models encode input text into a fixed-size representation and decode it back to the original text. & Input text is compressed into a latent representation and reconstructed during decoding. & Bidirectional encoding and decoding for representation learning. & Data compression, text denoising, and anomaly detection tasks. & BERT (Bidirectional Encoder Representations from Transformers) \\
-        \hline
-\center
-        Hybrid LM & Hybrid models combine elements of both autoregressive and autoencoder LMs to leverage their strengths. & Input text can be processed both sequentially and with bidirectional encoding-decoding. & Combines unidirectional and bidirectional learning strategies. & Versatile for a wide range of tasks, including text classification, language modeling, and text generation. & T5 (Text-to-Text Transfer Transformer) \\
-        \hline
-    \end{tabular}
-\end{table*}
+
 
 The utilization of N-gram language modeling has indeed played a pivotal role in advancing the domain of text generation. However, it is essential to recognize that its effectiveness encounters constraints, particularly when dealing with longer and more intricate sentences. These limitations have acted as a catalyst for the emergence of recurrent neural networks (RNNs), which represent a groundbreaking development in the realm of language modeling tasks. In their initial iterations, RNNs brought forth a crucial innovation by granting the ability to model longer dependencies within textual data. This innovation opened doors to the generation of more extensive and intricate sentences, marking a significant leap in the quest for improved text generation techniques.
 
@@ -190,6 +160,44 @@ Training the Transformer entails the minimization of a loss function, typically 
     \label{fig:galaxy}
 \end{figure}
 
+Since 2018, pre-trained language models (PLM) have gained attention, particularly those based on self-supervised learning over large-scale text data. Notable models like ELMo, BERT, and GPT-3 have demonstrated remarkable performance in various NLP tasks. PLMs offer dynamic context-aware representations and serve as a unified framework for NLP tasks. They have three typical model structures: autoregressive LM, autoencoding LM, and hybrid LM, represented by GPT, BERT, and T5, respectively. Autoregressive LM focuses on token-by-token word prediction, while autoencoding LM masks words in sentences, employs bidirectional encoding, and predicts the masked words based on context. Hybrid LM combines these approaches. BERT's success has led to its widespread adoption in academia and industry due to its strong performance in NLP tasks.
+
+Leveraging the Transformer architecture, OpenAI has developed a series of GPT models, including GPT-1, GPT-2, GPT-3, and GPT-4. These models have demonstrated improvements in language understanding and generation, with GPT-3 being particularly noteworthy for its excellence in text generation tasks and support for zero-shot and few-shot learning scenarios. OpenAI has further advanced large-scale language models with models like GPT-3.5 series, which includes Code-davinci and Text-davinci models. These models have enabled users to leverage advanced language capabilities through APIs and playgrounds. GPT-4, the latest milestone, is a large multimodal model, showing enhanced capabilities in understanding nuanced instructions.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{LMTYPES}
+    \caption{There three typical types of PLM: autoregressive LM, autoencoder LM and hybrid LM. Their working mechanisms are listed and compared in this
+table taken from Tianyu Wu et al. [A Brief Overview of ChatGPT: The History, Status Quo and Potential Future Development]}
+    \label{fig:your_image_label}
+\end{figure*}
+
+
+\begin{table*}
+    \centering
+    \caption{Comparison of Pre-trained Language Models}
+    \begin{tabular}{|p{2cm}|p{3cm}|p{3cm}|p{2cm}|p{2cm}|p{2 cm}|}
+        \hline
+\center
+        \textbf{Aspect} & \textbf{Encoding/Decoding Strategy} & \textbf{Input-Output Example} & \textbf{Learning Paradigm} & \textbf{Support Tasks} & \textbf{Representative Model} \\
+        \hline
+\center
+        Autoregressive LM & Autoregressive models generate text sequentially, predicting one token at a time based on previous tokens. & Input text is encoded step by step, generating output sequentially. & Unidirectional prediction from left to right or right to left. & Language modeling, text generation, and sequence completion tasks. & GPT-3 (Generative Pre-trained Transformer 3) \\
+        \hline
+\center
+        Autoencoder LM & Autoencoder models encode input text into a fixed-size representation and decode it back to the original text. & Input text is compressed into a latent representation and reconstructed during decoding. & Bidirectional encoding and decoding for representation learning. & Data compression, text denoising, and anomaly detection tasks. & BERT (Bidirectional Encoder Representations from Transformers) \\
+        \hline
+\center
+        Hybrid LM & Hybrid models combine elements of both autoregressive and autoencoder LMs to leverage their strengths. & Input text can be processed both sequentially and with bidirectional encoding-decoding. & Combines unidirectional and bidirectional learning strategies. & Versatile for a wide range of tasks, including text classification, language modeling, and text generation. & T5 (Text-to-Text Transfer Transformer) \\
+        \hline
+    \end{tabular}
+\end{table*}
+
+
+The development of artificial intelligence has highlighted the power of large models in learning complex features and patterns from raw data, ultimately leading to stronger data understanding and generation capabilities. These large-scale pre-trained language models exhibit better generalization and general task processing capabilities. The autoregressive language modeling approach adopted by GPT-3 and its successors has proven advantageous in directly utilizing natural language to describe various tasks in different domains. Researchers are now eager to explore the transparency and capabilities of GPT-4 in further advancing the field of artificial intelligence. These advancements signify the critical role that language models play in modern NLP and AI technologies.
+
+
+
 ELMo, short for "Embeddings from Language Models", introduced in 2018[22] is a form of word embeddings that provides a unique representation for each token within a sentence, taking into account the entire input sentence. These representations are constructed using a bidirectional Long Short-Term Memory (LSTM) network, which is trained with a coupled language model objective on a substantial text corpus.What sets ELMo apart is its depth, as it encompasses information from all the internal layers of the bidirectional LSTM. By amalgamating these internal states, ELMo offers comprehensive word representations that capture the nuanced and context-specific aspects of word meaning and syntax.Notably, ELMo representations have demonstrated substantial enhancements in performance across a range of language understanding tasks, including tasks like textual entailment, question answering, and sentiment analysis.
 ELMo is a model that enhances the performance of various natural language processing (NLP) tasks. It builds upon the Bidirectional Attention Flow model (BiDAF) by introducing several improvements, including the incorporation of a self-attention layer, simplification of pooling operations, and the substitution of LSTMs with gated recurrent units (GRUs). When ELMo is integrated into the baseline model, it results in a substantial 4.75 percent improvement in the F1 score on the test set, equating to a remarkable 24.9 percent relative reduction in errors compared to the baseline model. Furthermore, the utilization of an ensemble comprising 11 models further elevates the F1 score to 87.4 percent, establishing ELMo as the leading model in the field at the time of its introduction. Notably, ELMo surpasses other models like CoVe when it comes to enhancing the baseline model's performance.
 
@@ -242,15 +250,26 @@ The development of BART was driven by the objective of advancing the field of na
     \end{center}
 \end{table*}
 
-In 2018, the groundbreaking GPT-1 model, also known as GPT(Generative Pretrained Transformers)[27,28], made its debut, primarily focusing on the training of a generative language model within the innovative Transformer framework using unsupervised learning. This approach aimed to overcome the challenges posed by the scarcity of labeled data by capitalizing on vast amounts of unlabeled and diverse examples. GPT-1, characterized as an auto-regressive decoder-only Transformer, incorporated the self-attention mechanism into its architecture. The model's training began with the BooksCorpus dataset, followed by fine-tuning for specific downstream tasks. Impressively, it demonstrated its versatility by surpassing state-of-the-art models in 9 out of 12 test datasets, spanning various Natural Language Processing (NLP) categories, hinting at a promising direction for advancing Artificial General Intelligence (AGI).
+In 2018, the groundbreaking GPT-1 model, also known as GPT(Generative Pretrained Transformers)[27], made its debut, primarily focusing on the training of a generative language model within the innovative Transformer framework using unsupervised learning[28,29]. This approach aimed to overcome the challenges posed by the scarcity of labeled data by capitalizing on vast amounts of unlabeled and diverse examples. GPT-1, characterized as an auto-regressive decoder-only Transformer, incorporated the self-attention mechanism into its architecture[3]. The model's training began with the BooksCorpus dataset, followed by fine-tuning for specific downstream tasks. Impressively, it demonstrated its versatility by surpassing state-of-the-art models in 9 out of 12 test datasets, spanning various Natural Language Processing (NLP) categories, hinting at a promising direction for advancing Artificial General Intelligence (AGI). [27,30]
 
-In 2019, GPT-2 [29]emerged as a significant development, introducing multi-task learning while boasting a substantial increase in network parameters and training data compared to its predecessor. This enhancement allowed the model to exhibit a remarkable level of generalization across an array of supervised subtasks without requiring additional fine-tuning. With a tenfold increase in parameters and training on the extensive WebText corpus, GPT-2 achieved state-of-the-art performance levels in 7 out of 8 language modeling tasks, all within a zero-shot learning context. These results established baseline performances, stimulating further exploration for fine-tuning in specific applications.
+In 2019[31], GPT-2 emerged as a significant development, introducing multi-task learning[27] while boasting a substantial increase in network parameters and training data compared to its predecessor. This enhancement allowed the model to exhibit a remarkable level of generalization across an array of supervised subtasks without requiring additional fine-tuning. With a tenfold increase in parameters and training on the extensive WebText corpus, GPT-2 achieved state-of-the-art performance levels in 7 out of 8 language modeling tasks, all within a zero-shot learning context. These results established baseline performances, stimulating further exploration for fine-tuning in specific applications.[30]
 
-GPT-3, released in 2020[30], took a significant leap with a staggering 175 billion parameters and a high-quality training dataset comprising around 500 billion tokens from major data repositories. GPT-3 introduced a novel approach by combining meta-learning and in-context learning, leading to substantial improvements in generalization capabilities. The model set a milestone as the first language model to exceed 100 billion parameters.
+GPT-3 was released in 2020. To enhance the model's performance, developers increased its parameter count to a staggering 175 billion. They also dedicated significant efforts to curating a high-quality training dataset, comprising approximately 500 billion tokens sourced from five major data repositories: Common Crawl, WebText2, Books2, Books2, and Wikipedia[36]. This robust commercial product has found its way into numerous real-world applications, offering support in various areas, including customer service chatbots, report summarization tools, and software development aids, among others.
 
-ChatGPT, a part of the GPT3.5 series model[31], demonstrated advanced capabilities in language comprehension and generation. It excelled in various language-related tasks, incorporating technologies like deep learning, unsupervised learning, instruction fine-tuning, multi-task learning, in-context learning, and reinforcement learning. The pilot version, InstructGPT, embraced reinforcement learning with human feedback (RLHF) to align better with user intent during interactions.
+To significantly enhance the model's performance in both few-shot and zero-shot[33] scenarios, GPT-3[36] introduced a novel approach by merging meta-learning[37][38] and in-context learning[39]. Each model underwent a series of tests conducted three times, using distinct learning approaches: zero-shot, one-shot, and few-shot[9] learning methods, individually. In zero-shot learning, the model receives no prior demonstrations or examples. On the other hand, few-shot learning involves providing the model with a limited number of examples for learning, followed by a task completion request. Upon examining the results, it becomes evident that the model's performance is anticipated to enhance under two primary conditions: a) when the model size is increased, and b) when more demonstrations or examples are made accessible to the model.[30]
 
-GPT-4[32], a powerful multimodal model, can process both image and text inputs, consistently outperforming humans on various exams. It leverages a Transformer-style architecture and undergoes pre-training on extensive datasets, including publicly available and third-party data. Fine-tuning is performed using Reinforcement Learning from Human Feedback (RLHF). What sets GPT-4 apart is its ability to handle prompts combining text and images, making it a versatile tool for vision and language tasks across various domains. In these scenarios, GPT-4 excels as it does with text-only inputs, marking a significant advancement in the field of AI.
+This strategic combination led to a substantial improvement in the model's generalization capabilities, enabling it to surpass the majority of existing methods across a diverse range of downstream tasks. Notably, GPT-3 exhibited a remarkable increase in parameter scale, scaling up by 100 times compared to GPT-2, marking a significant milestone as the first language model to exceed a parameter count of 100 billion.
+
+ChatGPT which uses GPT 3.5, as an intelligent conversational robot affiliated with AIGC, exhibits impressive capabilities in comprehending and generating language-based responses in line with given prompts. Its prowess extends to a diverse range of language-related tasks, including multilingual machine translation, code debugging, creative storytelling, acknowledging errors, and even declining inappropriate requests, as per the official declaration. Distinguishing itself from earlier conversational robots, ChatGPT possesses the ability to retain and reference prior user input throughout the course of a conversation. This multifaceted functionality is underpinned by a fusion of cutting-edge technologies, encompassing deep learning, unsupervised learning, instruction fine-tuning, multi-task learning, in-context learning, and reinforcement learning.[3]
+
+In the context of the pilot version of ChatGPT, known as InstructGPT and belonging to the GPT3.5 series models, researchers adopted a reinforcement learning with human feedback (RLHF) approach[40]. This method facilitated incremental training of the GPT-3 model, with the primary goal of enhancing the model's ability to better understand and align with user intent during interactions. [3]
+
+GPT-4[41], released in March 2023, is a powerful multimodal model that can process both image and text inputs and produce text outputs. It has been extensively evaluated on various exams originally designed for humans, and it consistently performs exceptionally well, often surpassing the performance of the majority of human test takers. To illustrate its capabilities, consider a simulated bar exam where GPT-4 achieves a score ranking in the top 10 percent of test takers, a stark contrast to its predecessor, GPT-3.5, which ranks in the bottom 10 percent.
+
+Furthermore, GPT-4 outperforms previous large language models and most state-of-the-art systems on a suite of traditional natural language processing (NLP) benchmarks. This remarkable performance is achieved by leveraging a Transformer-style architecture, similar to its predecessors. The model undergoes pre-training on a vast dataset, including publicly available data like internet text and data obtained from third-party providers. Fine-tuning is then carried out using Reinforcement Learning from Human Feedback (RLHF), which refines the model's abilities.
+
+What sets GPT-4 apart is its capacity to accept prompts that consist of both images and text, offering users a versatile tool for various vision and language tasks. This means that GPT-4 can generate text-based responses when given inputs that interlace text and images seamlessly. This capability extends across diverse domains, encompassing documents containing text and photographs, diagrams, or screenshots. In all of these scenarios, GPT-4 demonstrates similar high-level capabilities as it does when processing text-only inputs.[37]
+
 
 
 
@@ -258,16 +277,35 @@ GPT-4[32], a powerful multimodal model, can process both image and text inputs, 
 \begin{center}
  \centering
     \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
- \hline
- PAPER CITED & AUTHORS & METHODOLOGY & MERITS & CHALLENGES \\ 
- \hline
- [7] An introduction to hidden Markov models & L. Rabiner and B. Juang & involves modeling a sequence of observable states that are influenced by an underlying sequence of hidden states. They use probabilistic transition and emission matrices to describe how the system evolves over time, making them valuable for various applications like speech recognition and time series analysis. & Robust mathematical foundation, Potent learning and decoding techniques, Effective sequence handling abilities, Flexible topology for syntax and statistical phonology. & Poor model discrimination and Assumptions of independent feature frames and first-order Markov process \\ 
- \hline
- [8] Hidden Markov models: An insight & M. I. Mohd Yusoff, I. Mohamed and M. R. Abu Bakar & & & \\ 
- \hline
- [9] Deep Gaussian mixture models. Statistics and Computing & Viroli, C., and McLachlan, G. J. & represent multidimensional data as a weighted combination of Gaussian distributions. Parameters are estimated via the Expectation-Maximization (EM) algorithm, where the E-step calculates data point probabilities for each cluster, and the M-step updates parameters for maximum likelihood. & Soft clustering for complex data, Flexible modeling of data distributions, Probabilistic representation, Effective for mixture modeling & Determining the optimal number of Gaussian components, Sensitive to initialization and local optima during parameter estimation, Computational complexity for high-dimensional data, Interpretability and understanding of the resulting mixture components \\ 
- \hline
- [10] Faster and smaller n-gram language models & Pauls, Adam, and Dan Klein & Implement parallel processing and vectorized operations to speed up n-gram calculations, especially during model inference. Quantize n-gram model parameters to reduce memory usage while maintaining reasonable accuracy & These models consume significantly fewer computational resources (CPU/GPU) and memory compared to larger, more complex language models, making them practical for deployment on resource-constrained devices or in low-power environments. & Smaller n-gram models lack the deep linguistic understanding and context that larger models, like neural language models, provide. This limitation can result in difficulties with complex language tasks that require knowledge of semantics and world context. \\ 
+\hline
+\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
+\hline
+[5] Historical review of OCR research and development &  Mori, Shunji, Ching Y. Suen, and Kazuhiko Yamamoto &  OCR involves scanning or capturing text from printed or handwritten documents and converting it into machine-readable text. It uses image processing and pattern recognition techniques. &  OCR automates data entry processes, saving time and reducing human errors. Advanced OCR systems offer high accuracy rates, ensuring reliable data extraction. OCR can handle various document formats and languages, making it versatile for different applications. &  Complex Layouts, Poor Image Quality, Handwriting Recognition  \\
+\hline
+[6] An overview of the Tesseract OCR engine  &  Smith, Ray &  &  &    \\
+\hline
+[7] An introduction to hidden Markov models &  L. Rabiner and B. Juang &  Involves modeling a sequence of observable states that are influenced by an underlying sequence of hidden states. They use probabilistic transition and emission matrices to describe how the system evolves over time, making them valuable for various applications like speech recognition and time series analysis. & Robust mathematical foundation, Potent learning and decoding techniques, Effective sequence handling abilities, Flexible topology for syntax and statistical phonology. &  Poor model discrimination and Assumptions of independent feature frames and first-order Markov process  \\
+\hline
+[8] Hidden Markov models: An insight &  M. I. Mohd Yusoff, I. Mohamed and M. R. Abu Bakar & & &   \\
+\hline
+[9] Deep Gaussian mixture models. Statistics and Computing &  Viroli, C., and McLachlan, G. J. & Represent multidimensional data as a weighted combination of Gaussian distributions. Parameters are estimated via the Expectation-Maximization (EM) algorithm, where the E-step calculates data point probabilities for each cluster, and the M-step updates parameters for maximum likelihood. &  Soft clustering for complex data, Flexible modeling of data distributions, Probabilistic representation, Effective for mixture modeling &  Determining the optimal number of Gaussian components, Sensitive to initialization and local optima during parameter estimation, Computational complexity for high-dimensional data, Interpretability and understanding of the resulting mixture components \\
+\hline
+[10]Faster and smaller n-gram language models &  Pauls, Adam, and Dan Klein &  Implement parallel processing and vectorized operations to speed up n-gram calculations, especially during model inference. Quantize n-gram model parameters to reduce memory usage while maintaining reasonable accuracy. &  These models consume significantly fewer computational resources (CPU/GPU) and memory compared to larger, more complex language models, making them practical for deployment on resource-constrained devices or in low-power environments. &  Smaller n-gram models lack the deep linguistic understanding and context that larger models, like neural language models, provide. This limitation can result in difficulties with complex language tasks that require knowledge of semantics and world context.  \\
+\hline
+[11] A variable-length category-based n-gram language model &  Niesler, Thomas R., and Philip C. Woodland & An extension of traditional n-gram models where n-grams are not limited to fixed lengths, but can vary in size. In this model, tokens are categorized into various classes or categories, and n-grams are formed by considering tokens within these categories. &  The model can capture nuanced and contextually rich information. This proves particularly valuable in language tasks where context plays a pivotal role, such as machine translation, sentiment analysis, and named entity recognition. & The computational demands of processing variable-length n-grams can strain available resources, potentially slowing down training and inference. It may render the model less suitable for applications requiring real-time processing. \\
+\hline
+[12] Predicting sentences using n-gram language models. &  Bickel, Steffen, Peter Haider, and Tobias Scheffer &  The frequency of n-grams in the training corpus is calculated to estimate the likelihood of encountering specific sequences. To predict a sentence, the n-grams in the sentence are evaluated for their probability of occurrence based on the frequencies derived from the training data. &  N-grams provide a straightforward way to capture local context in text data, making it easier to compute probabilities and predict sentences. This simplicity leads to faster training and inference, making it practical for real-time application. &  One of the primary challenges is the limited context captured by n-grams. Since they consider only local sequences of words, they may struggle with understanding the broader context of a sentence, especially in situations where long-range dependencies are crucial for accurate predictions.  \\
+\hline
+[13] A Closer Look at Skip-gram Modelling & David Guthrie, Ben Allison, Wei Liu, Louise Guthrie, Yorick Wilks &  It uses a neural network architecture where words are represented as one-hot vectors, and a hidden layer is trained to capture the relationships between words. During training, the weights of the neural network are adjusted to maximize the probability of correctly predicting context words. &  By training on large text corpora, it learns high-quality word embeddings that allow words with similar meanings or contexts to have similar vector representations. It can handle a diverse range of languages and domains, which enhances its versatility. &  Processing large corpora and adjusting the weights of the neural network can be resource-intensive, requiring substantial computing power and memory. This limits its accessibility in resource-constrained environments.  \\
+\hline
+[14] Comparative study of CNN and RNN for natural language processing. &  Yin, Wenpeng, Katharina Kann, Mo Yu, and Hinrich Schütze &  Used in the experiments involves training basic DNNs from scratch without any extra knowledge or complex tricks. Optimal hyperparameters are searched for each task and model separately to ensure fair comparison and accurate results. &  Results showed that CNNs and RNNs provide complementary information for text classification tasks, with the choice of architecture depending on the importance of understanding the entire sequence. &  Task-specific Requirements, Long Sequences, Comprehension of Global Semantics  \\
+\hline
+[15] Long short-term memory &  Hochreiter, Sepp, and Jurgen Schmidhuber & The experiments involved training and testing LSTM networks on various tasks. The experiments focused on different types of problems, such as long-time-lag problems with noise and signal on the same input line, distributed continuous-valued input representations, and tasks involving widely separated inputs. & Can solve long-time-lag problems with noise and signal on the same input line, Can overcome backpropagation in feed-forward nets &  Long-time-lag problems, Learning from noisy data  \\
+\hline
+[16] The vanishing gradient problem during learning recurrent neural nets and problem solutions &  Hochreiter, Sepp &  To overcome the vanishing gradient problem in LSTM networks, you can use techniques like gradient clipping and using specialized activation functions, such as the Gated Recurrent Unit (GRU) or Long Short-Term Memory (LSTM). &  The mentioned techniques alleviate the vanishing gradient problem in LSTMs and improve training stability in adversarial networks, ultimately enhancing their ability to learn complex patterns and generate meaningful results. & -  \\
+\hline
+[17] Generating and measuring similar sentences using long short-term memory and generative adversarial networks. &  Liang, Zhiyao, and Shiru Zhang &  The SSLSTM algorithm computes a representation vector of a given sentence by merging the results of two LSTM networks, one with the given sentence and the other with a related sentence generated based on the semantic and syntactic features of the words. &  SSLSTM allows for the calculation of semantic similarity scores based on the distance between the two representation vectors. &  Semantic Similarity, Logical Connections  \\
+\hline
  \hline
 \end{tabular}
 \end{center}
@@ -408,69 +446,76 @@ quantities and units. For example, write ``Temperature (K)'', not
 
 \bibitem{b26} Lewis, Mike, et al. "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension." arXiv preprint arXiv:1910.13461 (2019).
 
-\bibitem{b27} Wang, Y., Pan, Y., Yan, M., Su, Z., and Luan, T. H. (2023). A Survey on ChatGPT: AI-Generated Contents, Challenges, and Solutions. arXiv preprint arXiv:2305.18339.
+\bibitem{b27} Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. "Improving language understanding by generative pre-training." (2018).
 
-\bibitem{b28} Wu, T., He, S., Liu, J., Sun, S., Liu, K., Han, Q.L. and Tang, Y., 2023. A brief overview of ChatGPT: The history, status quo and potential future development. IEEE/CAA Journal of Automatica Sinica, 10(5), pp.1122-1136.
+\bibitem{b28} M. Khosla, A. Anand, and V. Setty, “A comprehensive comparison of unsupervised network representation learning methods,” arXiv preprint arXiv: 1903.07902, 2019.
 
-\bibitem{b29} Radford, Alec, et al. "Language models are unsupervised multitask learners." OpenAI blog 1.8 (2019): 9.
+\bibitem{b29} C. Ieracitano, A. Paviglianiti, M. Campolo, A. Hussain, E. Pasero, and F. C. Morabito, “ A novel automatic classification system based on hybrid unsupervised and supervised machine learning for electrospun nanofibers,” IEEE/CAA J. Autom. Sinica, vol. 8, no. 1, pp.64–76, Jan. 2021.
+
 
 \bibitem{b30} Zong, Mingyu, and Bhaskar Krishnamachari. "A survey on GPT-3." arXiv preprint arXiv:2212.00857 (2022).
 
-\bibitem{b31} Ye, Junjie, et al. "A comprehensive capability analysis of gpt-3 and gpt-3.5 series models." arXiv preprint arXiv:2303.10420 (2023).
+\bibitem{b31} Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever, I., 2019. Language models are unsupervised multitask learners. OpenAI blog, 1(8), p.9..
 
-\bibitem{b32}]OpenAI, “Gpt-4 technical report,” 2023. [Online]. Available: https:// cdn.openai.com/papers/gpt-4.pdf.
+\bibitem{b32} Y. Zhang and Q. Yang, “ A survey on multi-task learning,” IEEE Trans. Knowl. Data Eng., vol.34, no.12, pp.5586–5609, Dec. 2022.
 
-\bibitem{b33} Kowsher, Md, et al. "Bangla-BERT: transformer-based efficient model for transfer learning and language understanding." IEEE Access 10 (2022): 91855-91870.
+\bibitem{b33} Y. Q. Wang, Q. M. Yao, J. T. Kwok, and L. M. Ni, “Generalizing from a few examples: A survey on few-shot learning,” ACM Comput. Surv., vol.53, no. 3, p. 63, May 2021.
 
-\bibitem{b34} Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
+\bibitem{b34} M. Khosla, A. Anand, and V. Setty, “A comprehensive comparison of unsupervised network representation learning methods,” arXiv preprint arXiv: 1903.07902, 2019.
 
-\bibitem{b35} Wolf, Thomas, et al. "Transformers: State-of-the-art natural language processing." Proceedings of the 2020 conference on empirical methods in natural language processing: system demonstrations. 2020.
+\bibitem{b35} C. Ieracitano, A. Paviglianiti, M. Campolo, A. Hussain, E. Pasero, and F. C. Morabito, “ A novel automatic classification system based on hybrid unsupervised and supervised machine learning for electrospun nanofibers,” IEEE/CAA J. Autom. Sinica, vol. 8, no. 1, pp.64–76, Jan. 2021.
 
-\bibitem{b36} H. Palangi, L. Deng, Y. Shen, J. Gao, X. He, J. Chen, X. Song, and R. Ward, "Deep sentence embedding using long short-term memory networks: Analysis and application to information retrieval," IEEE/ACM Trans. Audio, Speech, Language Process., vol. 24, no. 4, pp. 694–707, Apr. 2016.
 
-\bibitem{b37} S. Hochreiter and J. Schmidhuber, "Long short-term memory," Neural Comput., vol. 9, no. 8, pp. 1735–1780, 1997.
+\bibitem{b36} T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei, “Language models are few-shot learners,” in Proc. 34th Int. Conf. Neural Information Processing Systems, Vancouver, Canada, 2020, pp. 1877–1901.
 
-\bibitem{b38} A. Krizhevsky, I. Sutskever, and G. E. Hinton, "ImageNet classification with deep convolutional neural networks," Commun. ACM, vol. 60, no. 6, pp. 84–90, Jun. 2017.
 
-\bibitem{b39} T. Mikolov, M. Karafiát, L. Burget, J. Černocký, and S. Khudanpur, "Recurrent neural network based language model," in Proc. 11th Annu. Conf. Int. Speech Commun. Assoc., Chiba, Japan, 2010, pp. 1045–1048.
+\bibitem{b37} C. Finn, P. Abbeel, and S. Levine, “Model-agnostic meta-learning for fast adaptation of deep networks,” in Proc. 34th Int. Conf. Machine Learning, Sydney, Australia, 2017, pp. 1126–1135.
 
-\bibitem{b40} I. Sutskever, O. Vinyals, and Q. V. Le, "Sequence to sequence learning with neural networks," in Proc. Neural Inf. Process. Syst., Montreal, QC, Canada, 2014, pp. 3104–3112.
+\bibitem{b38} J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson, “A survey of meta-reinforcement learning,” arXiv preprint arXiv: 2301.08028, 2023.
 
-\bibitem{b41} S. R. Zhang, Z. Y. Liang, and J. Lin, "Sentence similarity measurement with convolutional neural networks using semantic and syntactic features," Comput., Mater. Continua, vol. 63, no. 2, pp. 943–957, 2020.
 
-\bibitem{b42} X. Liu, P. He, W. Chen, and J. Gao, "Multi-task deep neural networks for natural language understanding," in Proc. 57th Annu. Meeting Assoc. Comput. Linguistics, Florence, Italy, 2019, pp
+\bibitem{b39} Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X. Sun, J. J. Xu, L. Li, and Z. F. Sui, “A survey on in-context learning,” arXiv preprint arXiv: 2301.00234, 2022.
 
-\bibitem{b43} J. Mueller and A. Thyagarajan, ‘‘Siamese recurrent architectures for learn-ing sentence similarity,’’ in Proc. 13th Conf. Artif. Intell., Phoenix, AZ, USA, 2016, pp. 2786–2792.
+\bibitem{b40} L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe, “ Training language models to follow instructions with human feedback,” arXiv preprint arXiv: 2203.02155, 2022.
 
-\bibitem{b44}I. J. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, ‘‘Generative adversarial nets,’’ain Proc. Neural Inf. Process. NIPS, Montreal, QC, Canada, 2014, pp. 2672–2680.
 
-\bibitem{b45} J. Gui, Z. Sun, Y. Wen, D. Tao, and J. Ye, ‘‘A review on generative adversarial networks: Algorithms, theory, and applications,’’ Comput. Res. Repository, vol. abs/2001.06937, pp. 1–28, Jan. 2020.
+\bibitem{b41} OpenAI, “Gpt-4 technical report,” 2023. [Online]. Available: https:// cdn.openai.com/papers/gpt-4.pdf.
 
-\bibitem{b46} Z. Zhang, S. Liu, M. Li, M. Zhou, and E. Chen, ‘‘Bidirectional generative adversarial networks for neural machine translation,’’ in Proc. Assoc. Comput. Linguistics, Brussels, Belgium, no. 1, 2018, pp. 190–199.
 
-\bibitem{b47} Y. Fu, Y. S. Feng, and J. P. Cunningham, ‘‘Paraphrase generation with latent bag of words,’’ in Proc. Neural Inf. Process. NIPS, Vancouver, BC, Canada, 2019, pp. 13623–13634.
+\bibitem{b42} Ye, Junjie, et al. "A comprehensive capability analysis of gpt-3 and gpt-3.5 series models." arXiv preprint arXiv:2303.10420 (2023).
 
-\bibitem{b48}  C.-Y. Lin and E. Hovy, ‘‘Manual and automatic evaluation of summaries,’’ in Proc. Workshop Autom. Summarization (ACL), Barcelona, Spain, 2004, pp. 74–81.
 
-\bibitem{b49} S. Bird, E. Klein, and E. Loper, Natural Language Processing With Python: Analyzing Text With the Natural Language Toolkit, vol. 44, 1st ed. Sebastopol, CA, USA: O’Reilly Media, 2009, pp. 421–424.
+%\bibitem{b43} J. Mueller and A. Thyagarajan, ‘‘Siamese recurrent architectures for learn-ing sentence similarity,’’ in Proc. 13th Conf. Artif. Intell., Phoenix, AZ, USA, 2016, pp. 2786–2792.
 
-\bibitem{b50} C. Manning, M. Surdeanu, J. Bauer, J. Finkel, S. Bethard, and D. McClosky, ‘‘The Stanford CoreNLP natural language processing toolkit,’’ in Proc. 52nd Annu. Meeting Assoc. Comput. Linguistics, Syst. Demonstrations, Baltimore, MD, USA, 2014, pp. 55–60.
+%\bibitem{b44}I. J. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, ‘‘Generative adversarial nets,’’ain Proc. Neural Inf. Process. NIPS, Montreal, QC, Canada, 2014, pp. 2672–2680.
 
-\bibitem{b51} J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, ‘‘BERT: Pre-training of deep bidirectional transformers for language understanding,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Tech-nol., vol. 1, Jun. 2019, pp. 4171–4186.
+%\bibitem{b45} J. Gui, Z. Sun, Y. Wen, D. Tao, and J. Ye, ‘‘A review on generative adversarial networks: Algorithms, theory, and applications,’’ Comput. Res. Repository, vol. abs/2001.06937, pp. 1–28, Jan. 2020.
 
-\bibitem{b52} Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, ‘‘RoBERTa: A robustly optimized BERT pretraining approach,’’ 2019, arXiv:1907.11692. [Online]. Available: http://arxiv.org/abs/1907.11692
+%\bibitem{b46} Z. Zhang, S. Liu, M. Li, M. Zhou, and E. Chen, ‘‘Bidirectional generative adversarial networks for neural machine translation,’’ in Proc. Assoc. Comput. Linguistics, Brussels, Belgium, no. 1, 2018, pp. 190–199.
 
-\bibitem{b53} X. Wu, S. Lv, L. Zang, J. Han, and S. Hu, ‘‘Conditional bert contextual aug-mentation,’’ in Proc. Int. Conf. Comput. Sci. Cham, Switzerland: Springer,2019, pp. 84–95.
+%\bibitem{b47} Y. Fu, Y. S. Feng, and J. P. Cunningham, ‘‘Paraphrase generation with latent bag of words,’’ in Proc. Neural Inf. Process. NIPS, Vancouver, BC, Canada, 2019, pp. 13623–13634.
 
-\bibitem{b54} Z. Yang, D. Yang, C. Dyer, X. He, A. Smola, and E. Hovy, ‘‘Hierarchical attention networks for document classification,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Technol., 2016, pp. 1480–1489.
+%\bibitem{b48}  C.-Y. Lin and E. Hovy, ‘‘Manual and automatic evaluation of summaries,’’ in Proc. Workshop Autom. Summarization (ACL), Barcelona, Spain, 2004, pp. 74–81.
 
-\bibitem{b55} Z. Lin, M. Feng, C. N. dos Santos, M. Yu, B. Xiang, B. Zhou, and Y. Bengio, ‘‘A structured self-attentive sentence embedding,’’ 2017, arXiv:1703.03130.
+%\bibitem{b49} S. Bird, E. Klein, and E. Loper, Natural Language Processing With Python: Analyzing Text With the Natural Language Toolkit, vol. 44, 1st ed. Sebastopol, CA, USA: O’Reilly Media, 2009, pp. 421–424.
 
-\bibitem{b56} A. Wang, A. Singh, J. Michael, F. Hill, O. Levy, and S. Bowman, ‘‘Glue: A multi-task benchmark and analysis platform for natural language under-standing,’’ in Proc. EMNLP Workshop BlackboxNLP, Analyzing Interpret-ing Neural Netw. (NLP), 2018, pp. 353–355.
+%\bibitem{b50} C. Manning, M. Surdeanu, J. Bauer, J. Finkel, S. Bethard, and D. McClosky, ‘‘The Stanford CoreNLP natural language processing toolkit,’’ in Proc. 52nd Annu. Meeting Assoc. Comput. Linguistics, Syst. Demonstrations, Baltimore, MD, USA, 2014, pp. 55–60.
 
-\bibitem{b57} Hu, Dichao. ”An introductory survey on attention mechanisms in NLP problems.” Proceedings of SAI Intelligent Systems Conference. Springer, Cham, 2019.
+%\bibitem{b51} J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, ‘‘BERT: Pre-training of deep bidirectional transformers for language understanding,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Tech-nol., vol. 1, Jun. 2019, pp. 4171–4186.
 
-\bibitem{b58} Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. ”Effective approaches to attention-based neural machine translation.” arXiv preprint arXiv:1508.04025 (2015).
+%\bibitem{b52} Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, ‘‘RoBERTa: A robustly optimized BERT pretraining approach,’’ 2019, arXiv:1907.11692. [Online]. Available: http://arxiv.org/abs/1907.11692
+
+%\bibitem{b53} X. Wu, S. Lv, L. Zang, J. Han, and S. Hu, ‘‘Conditional bert contextual aug-mentation,’’ in Proc. Int. Conf. Comput. Sci. Cham, Switzerland: Springer,2019, pp. 84–95.
+
+%\bibitem{b54} Z. Yang, D. Yang, C. Dyer, X. He, A. Smola, and E. Hovy, ‘‘Hierarchical attention networks for document classification,’’ in Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics, Hum. Lang. Technol., 2016, pp. 1480–1489.
+
+%\bibitem{b55} Z. Lin, M. Feng, C. N. dos Santos, M. Yu, B. Xiang, B. Zhou, and Y. Bengio, ‘‘A structured self-attentive sentence embedding,’’ 2017, arXiv:1703.03130.
+
+%\bibitem{b56} A. Wang, A. Singh, J. Michael, F. Hill, O. Levy, and S. Bowman, ‘‘Glue: A multi-task benchmark and analysis platform for natural language under-standing,’’ in Proc. EMNLP Workshop BlackboxNLP, Analyzing Interpret-ing Neural Netw. (NLP), 2018, pp. 353–355.
+
+%\bibitem{b57} Hu, Dichao. ”An introductory survey on attention mechanisms in NLP problems.” Proceedings of SAI Intelligent Systems Conference. Springer, Cham, 2019.
+
+%\bibitem{b58} Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. ”Effective approaches to attention-based neural machine translation.” arXiv preprint arXiv:1508.04025 (2015).
 \end{thebibliography}
 \vspace{12pt}
 \color{red}

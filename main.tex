@@ -254,25 +254,25 @@ In 2018, the groundbreaking GPT-1 model, also known as GPT(Generative Pretrained
 
 In 2019[31], GPT-2 emerged as a significant development, introducing multi-task learning[27] while boasting a substantial increase in network parameters and training data compared to its predecessor. This enhancement allowed the model to exhibit a remarkable level of generalization across an array of supervised subtasks without requiring additional fine-tuning. With a tenfold increase in parameters and training on the extensive WebText corpus, GPT-2 achieved state-of-the-art performance levels in 7 out of 8 language modeling tasks, all within a zero-shot learning context. These results established baseline performances, stimulating further exploration for fine-tuning in specific applications.[30]
 
-GPT-3 was released in 2020. To enhance the model's performance, developers increased its parameter count to a staggering 175 billion. They also dedicated significant efforts to curating a high-quality training dataset, comprising approximately 500 billion tokens sourced from five major data repositories: Common Crawl, WebText2, Books2, Books2, and Wikipedia[36]. This robust commercial product has found its way into numerous real-world applications, offering support in various areas, including customer service chatbots, report summarization tools, and software development aids, among others.
+GPT-3 was released in 2020. To enhance the model's performance, developers increased its parameter count to a staggering 175 billion. They also dedicated significant efforts to curating a high-quality training dataset, comprising approximately 500 billion tokens sourced from five major data repositories: Common Crawl, WebText2, Books2, Books2, and Wikipedia[35]. This robust commercial product has found its way into numerous real-world applications, offering support in various areas, including customer service chatbots, report summarization tools, and software development aids, among others.
 
-To significantly enhance the model's performance in both few-shot and zero-shot[33] scenarios, GPT-3[36] introduced a novel approach by merging meta-learning[37][38] and in-context learning[39]. Each model underwent a series of tests conducted three times, using distinct learning approaches: zero-shot, one-shot, and few-shot[9] learning methods, individually. In zero-shot learning, the model receives no prior demonstrations or examples. On the other hand, few-shot learning involves providing the model with a limited number of examples for learning, followed by a task completion request. Upon examining the results, it becomes evident that the model's performance is anticipated to enhance under two primary conditions: a) when the model size is increased, and b) when more demonstrations or examples are made accessible to the model.[30]
+To significantly enhance the model's performance in both few-shot and zero-shot[33] scenarios, GPT-3[35] introduced a novel approach by merging meta-learning[36][37] and in-context learning[38]. Each model underwent a series of tests conducted three times, using distinct learning approaches: zero-shot, one-shot, and few-shot[33] learning methods, individually. In zero-shot learning, the model receives no prior demonstrations or examples. On the other hand, few-shot learning involves providing the model with a limited number of examples for learning, followed by a task completion request. Upon examining the results, it becomes evident that the model's performance is anticipated to enhance under two primary conditions: a) when the model size is increased, and b) when more demonstrations or examples are made accessible to the model.[30]
 
 This strategic combination led to a substantial improvement in the model's generalization capabilities, enabling it to surpass the majority of existing methods across a diverse range of downstream tasks. Notably, GPT-3 exhibited a remarkable increase in parameter scale, scaling up by 100 times compared to GPT-2, marking a significant milestone as the first language model to exceed a parameter count of 100 billion.
 
 ChatGPT which uses GPT 3.5, as an intelligent conversational robot affiliated with AIGC, exhibits impressive capabilities in comprehending and generating language-based responses in line with given prompts. Its prowess extends to a diverse range of language-related tasks, including multilingual machine translation, code debugging, creative storytelling, acknowledging errors, and even declining inappropriate requests, as per the official declaration. Distinguishing itself from earlier conversational robots, ChatGPT possesses the ability to retain and reference prior user input throughout the course of a conversation. This multifaceted functionality is underpinned by a fusion of cutting-edge technologies, encompassing deep learning, unsupervised learning, instruction fine-tuning, multi-task learning, in-context learning, and reinforcement learning.[3]
 
-In the context of the pilot version of ChatGPT, known as InstructGPT and belonging to the GPT3.5 series models, researchers adopted a reinforcement learning with human feedback (RLHF) approach[40]. This method facilitated incremental training of the GPT-3 model, with the primary goal of enhancing the model's ability to better understand and align with user intent during interactions. [3]
+In the context of the pilot version of ChatGPT, known as InstructGPT and belonging to the GPT3.5 series models, researchers adopted a reinforcement learning with human feedback (RLHF) approach[39]. This method facilitated incremental training of the GPT-3 model, with the primary goal of enhancing the model's ability to better understand and align with user intent during interactions. [3]
 
-GPT-4[41], released in March 2023, is a powerful multimodal model that can process both image and text inputs and produce text outputs. It has been extensively evaluated on various exams originally designed for humans, and it consistently performs exceptionally well, often surpassing the performance of the majority of human test takers. To illustrate its capabilities, consider a simulated bar exam where GPT-4 achieves a score ranking in the top 10 percent of test takers, a stark contrast to its predecessor, GPT-3.5, which ranks in the bottom 10 percent.
+GPT-4[40], released in March 2023, is a powerful multimodal model that can process both image and text inputs and produce text outputs. It has been extensively evaluated on various exams originally designed for humans, and it consistently performs exceptionally well, often surpassing the performance of the majority of human test takers. To illustrate its capabilities, consider a simulated bar exam where GPT-4 achieves a score ranking in the top 10 percent of test takers, a stark contrast to its predecessor, GPT-3.5, which ranks in the bottom 10 percent.
 
 Furthermore, GPT-4 outperforms previous large language models and most state-of-the-art systems on a suite of traditional natural language processing (NLP) benchmarks. This remarkable performance is achieved by leveraging a Transformer-style architecture, similar to its predecessors. The model undergoes pre-training on a vast dataset, including publicly available data like internet text and data obtained from third-party providers. Fine-tuning is then carried out using Reinforcement Learning from Human Feedback (RLHF), which refines the model's abilities.
 
-What sets GPT-4 apart is its capacity to accept prompts that consist of both images and text, offering users a versatile tool for various vision and language tasks. This means that GPT-4 can generate text-based responses when given inputs that interlace text and images seamlessly. This capability extends across diverse domains, encompassing documents containing text and photographs, diagrams, or screenshots. In all of these scenarios, GPT-4 demonstrates similar high-level capabilities as it does when processing text-only inputs.[37]
+What sets GPT-4 apart is its capacity to accept prompts that consist of both images and text, offering users a versatile tool for various vision and language tasks. This means that GPT-4 can generate text-based responses when given inputs that interlace text and images seamlessly. This capability extends across diverse domains, encompassing documents containing text and photographs, diagrams, or screenshots. In all of these scenarios, GPT-4 demonstrates similar high-level capabilities as it does when processing text-only inputs.[36]
 
 
 
-
+\parskip=0.5\baselineskip
 \begin{table*}
 \begin{center}
  \centering
@@ -298,6 +298,18 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
 \hline
 [13] A Closer Look at Skip-gram Modelling & David Guthrie, Ben Allison, Wei Liu, Louise Guthrie, Yorick Wilks &  It uses a neural network architecture where words are represented as one-hot vectors, and a hidden layer is trained to capture the relationships between words. During training, the weights of the neural network are adjusted to maximize the probability of correctly predicting context words. &  By training on large text corpora, it learns high-quality word embeddings that allow words with similar meanings or contexts to have similar vector representations. It can handle a diverse range of languages and domains, which enhances its versatility. &  Processing large corpora and adjusting the weights of the neural network can be resource-intensive, requiring substantial computing power and memory. This limits its accessibility in resource-constrained environments.  \\
 \hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+
+\begin{table*}
+\begin{center}
+ \centering
+    \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
+\hline
+\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
+\hline
 [14] Comparative study of CNN and RNN for natural language processing. &  Yin, Wenpeng, Katharina Kann, Mo Yu, and Hinrich Schütze &  Used in the experiments involves training basic DNNs from scratch without any extra knowledge or complex tricks. Optimal hyperparameters are searched for each task and model separately to ensure fair comparison and accurate results. &  Results showed that CNNs and RNNs provide complementary information for text classification tasks, with the choice of architecture depending on the importance of understanding the entire sequence. &  Task-specific Requirements, Long Sequences, Comprehension of Global Semantics  \\
 \hline
 [15] Long short-term memory &  Hochreiter, Sepp, and Jurgen Schmidhuber & The experiments involved training and testing LSTM networks on various tasks. The experiments focused on different types of problems, such as long-time-lag problems with noise and signal on the same input line, distributed continuous-valued input representations, and tasks involving widely separated inputs. & Can solve long-time-lag problems with noise and signal on the same input line, Can overcome backpropagation in feed-forward nets &  Long-time-lag problems, Learning from noisy data  \\
@@ -306,6 +318,78 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
 \hline
 [17] Generating and measuring similar sentences using long short-term memory and generative adversarial networks. &  Liang, Zhiyao, and Shiru Zhang &  The SSLSTM algorithm computes a representation vector of a given sentence by merging the results of two LSTM networks, one with the given sentence and the other with a related sentence generated based on the semantic and syntactic features of the words. &  SSLSTM allows for the calculation of semantic similarity scores based on the distance between the two representation vectors. &  Semantic Similarity, Logical Connections  \\
 \hline
+[18] WordNet: a lexical database for English &  George A. and Miller &  WordNet involves organizing English nouns, verbs, adjectives, and adverbs into sets of synonyms, each representing a lexicalized concept. These synonym sets are linked through semantic relations that determine word definitions & It links words to sets of synonyms and semantic relations, allowing for a better understanding of word meanings and their usage in different contexts. This database is a useful tool for computational linguists and researchers working on natural language processing tasks. &  Sense identification, 
+the limited effectiveness of topical context in identifying senses correctly \\
+\hline
+[19] Generative adversarial networks: introduction and outlook & Kunfeng Wang & GANs consist of two neural networks, a generator, and a discriminator, which play a competitive game. The generator creates fake data samples, and the discriminator evaluates them, with both networks continually improving their performance through adversarial training until the generator produces high-quality data that is difficult for the discriminator to distinguish from real data. & 1]  GANs can generate data that can be naturally interpreted, solving the problem of generating meaningful data
+2] GANs have the ability to generate high-dimensional data without limitations on the dimensionality of the generated samples. & 1] the convergence of the model and the existence of an equilibrium point
+2] the poor interpretability of GANs
+ \\
+\hline
+[20] A multi-scale convolutional attention based GRU network for text classification &  Xianlun Tang & MCA-GRU, combines a GRU network with multi-scale convolutional attention to improve the performance of text classification. The convolutional layers capture local information and generate attention signals, while the GRU network learns sequence features to enhance the overall semantic expression and classification accuracy &  The MCA-GRU approach for text classification has several merits. Firstly, it incorporates a novel convolutional attention mechanism that extracts attention signals from convolutional layers, allowing for the selection of multi-scale features. Secondly, it combines these attention signals with the sequence features learned by the GRU network, enhancing the overall semantic expression and improving classification performance. & 1] Limited Effect of Window Size
+
+2] Possible Overfitting with Increased Depth
+
+3] Dependency on Dense Connections
+
+4] Lack of Comparison with Other Models
+
+5] Lack of External Validation \\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+
+
+\begin{table*}
+\begin{center}
+ \centering
+    \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
+\hline
+\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
+\hline
+[21] Attention is all you need & Ashish, Vaswani & It involves the application of attention-based models, specifically the Transformer model, to various tasks & 1] Attention-based architecture
+
+2]  Improved performance
+
+3] Flexibility and Scalability 
+ & 1] handling large inputs and outputs efficiently
+2] making the generation process less sequential
+
+3] training large models can be computationally expensive. \\
+\hline
+[22] Detecting formal thought disorder by deep contextualized word representations &  Justyna, Sarzynska-Wawer & Information not provided. & Information not provided. \\
+\hline
+[23] Bert: Pre-training of deep bidirectional transformers for language understanding & Jacob Devlin, Ming-Wei Chang, and Lee Kristina Toutanova & The methodology involves pre-training a model on a binarized next sentence prediction task using a monolingual corpus, where 50 percent of the time the next sentence is the actual next sentence and 50 percent of the time it is a random sentence from the corpus. This pre-training is shown to be beneficial for downstream tasks such as question answering and natural language inference. & BERT fine-tuning offers several merits in natural language processing (NLP) tasks. It allows for the use of deep bidirectional architectures, enabling a single pre-trained model to handle a wide range of NLP tasks. Additionally, fine-tuning is relatively inexpensive and can be replicated in a short amount of time. & 1] Applying pre-trained language representations to downstream tasks
+
+2] Pre-training from Unlabeled Text
+
+3] Single-Task Fine-Tuning
+
+4]  Limited Public System Descriptions
+ \\
+\hline
+[24] Improving bert with self-supervised attention & Yiren and Chen & The graph-based attention mechanism in a sequence-to-sequence framework for document summarization. This approach utilizes a graph-based attention mechanism to summarize documents effectively & 1] enhances the aspect-based sentiment analysis
+
+2] Correcting misleading context
+
+3] Minimal training cost  & 1] fine-tuned models often overfit
+
+2] The sensitivity of these models to irrelevant or misleading words
+\\
+\hline
+[25] A robustly optimized BERT pre-training approach with post-training & Zhuang, Liu & The proposed methodology, PPBERT, is a three-phase process for training language models, consisting of pre-training, post-training, and fine-tuning stages. During pre-training, the model is trained on a vast dataset, followed by additional training on task or domain-specific data in the post-training phase. The final fine-tuning stage refines the model on the target datasets. &  1] Improved Performance
+
+2] Flexibility and Pluggability
+
+3] Incorporation of Task and Domain Awareness & 1] The availability of unanswerable questions
+
+2] The difficulty of language understanding tasks \\
+\hline
+[26] Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension & Mike, Lewis, et al. &  BART leverages bidirectional pre-training by training a transformer model on a denoising autoencoder task, where input text is corrupted with random masking or shuffling of words, and the model learns to predict the original, uncorrupted text. & It enables the model to comprehend and interpret the contextual relationships between words and phrases within text documents from both the left-to-right and right-to-left directions & BART is a large model, and both the pre-training and fine-tuning phases demand substantial computational power and memory resources.BART's performance is heavily dependent on the quality and representativeness of the training data.  \\
+\hline
+[27] Improving language understanding by generative pre-training & Alec, Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever & The paper follows a two-stage training process: 1) Unsupervised Pre-training where a Transformer-based language model learns from unlabeled text by predicting the next token, and 2) Supervised Fine-tuning where the model is adapted to specific NLP tasks using labeled data and task-specific input transformations & strong transfer learning abilities in NLP and achieves impressive performance across diverse tasks without specialized architectures or extensive labeled data. Model remains task-agnostic and efficiently adapts to different NLP tasks with minimal architectural changes, leveraging abundant unlabeled data to mitigate the reliance on scarce labeled resources in challenging domains. &  the critical choice of pre-training data quality and diversity, the need for high-quality labeled data during fine-tuning, the challenge of hyperparameter tuning, variable transferability across different NLP tasks, and the substantial computational resources required for training large Transformer models.\\
  \hline
 \end{tabular}
 \end{center}
@@ -376,17 +460,6 @@ After collecting these pertinent documents or informational insights, the langua
 %\label{fig}
 %\end{figure}
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
-
-\section*{Acknowledgment}
 
 
 
@@ -463,26 +536,23 @@ quantities and units. For example, write ``Temperature (K)'', not
 
 \bibitem{b34} M. Khosla, A. Anand, and V. Setty, “A comprehensive comparison of unsupervised network representation learning methods,” arXiv preprint arXiv: 1903.07902, 2019.
 
-\bibitem{b35} C. Ieracitano, A. Paviglianiti, M. Campolo, A. Hussain, E. Pasero, and F. C. Morabito, “ A novel automatic classification system based on hybrid unsupervised and supervised machine learning for electrospun nanofibers,” IEEE/CAA J. Autom. Sinica, vol. 8, no. 1, pp.64–76, Jan. 2021.
+\bibitem{b35} T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei, “Language models are few-shot learners,” in Proc. 34th Int. Conf. Neural Information Processing Systems, Vancouver, Canada, 2020, pp. 1877–1901.
 
 
-\bibitem{b36} T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei, “Language models are few-shot learners,” in Proc. 34th Int. Conf. Neural Information Processing Systems, Vancouver, Canada, 2020, pp. 1877–1901.
+\bibitem{b36} C. Finn, P. Abbeel, and S. Levine, “Model-agnostic meta-learning for fast adaptation of deep networks,” in Proc. 34th Int. Conf. Machine Learning, Sydney, Australia, 2017, pp. 1126–1135.
+
+\bibitem{b37} J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson, “A survey of meta-reinforcement learning,” arXiv preprint arXiv: 2301.08028, 2023.
 
 
-\bibitem{b37} C. Finn, P. Abbeel, and S. Levine, “Model-agnostic meta-learning for fast adaptation of deep networks,” in Proc. 34th Int. Conf. Machine Learning, Sydney, Australia, 2017, pp. 1126–1135.
+\bibitem{b38} Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X. Sun, J. J. Xu, L. Li, and Z. F. Sui, “A survey on in-context learning,” arXiv preprint arXiv: 2301.00234, 2022.
 
-\bibitem{b38} J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson, “A survey of meta-reinforcement learning,” arXiv preprint arXiv: 2301.08028, 2023.
-
-
-\bibitem{b39} Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X. Sun, J. J. Xu, L. Li, and Z. F. Sui, “A survey on in-context learning,” arXiv preprint arXiv: 2301.00234, 2022.
-
-\bibitem{b40} L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe, “ Training language models to follow instructions with human feedback,” arXiv preprint arXiv: 2203.02155, 2022.
+\bibitem{b39} L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe, “ Training language models to follow instructions with human feedback,” arXiv preprint arXiv: 2203.02155, 2022.
 
 
-\bibitem{b41} OpenAI, “Gpt-4 technical report,” 2023. [Online]. Available: https:// cdn.openai.com/papers/gpt-4.pdf.
+\bibitem{b40} OpenAI, “Gpt-4 technical report,” 2023. [Online]. Available: https:// cdn.openai.com/papers/gpt-4.pdf.
 
 
-\bibitem{b42} Ye, Junjie, et al. "A comprehensive capability analysis of gpt-3 and gpt-3.5 series models." arXiv preprint arXiv:2303.10420 (2023).
+\bibitem{b41} Ye, Junjie, et al. "A comprehensive capability analysis of gpt-3 and gpt-3.5 series models." arXiv preprint arXiv:2303.10420 (2023).
 
 
 %\bibitem{b43} J. Mueller and A. Thyagarajan, ‘‘Siamese recurrent architectures for learn-ing sentence similarity,’’ in Proc. 13th Conf. Artif. Intell., Phoenix, AZ, USA, 2016, pp. 2786–2792.

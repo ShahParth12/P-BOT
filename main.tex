@@ -148,7 +148,7 @@ The Transformer model has revolutionized the landscape of natural language proce
 At the heart of the Transformer's ingenuity lies the self-attention mechanism. This mechanism endows the model with the capacity to discern the significance of each word or token in a given sequence concerning all others, thus enabling a comprehensive understanding of context and relationships across various distances. It accomplishes this by generating attention scores, which gauge the similarity between each pair of tokens and, subsequently, utilizes these scores to blend information from disparate parts of the sequence. The outcome is the creation of context-aware representations for each token, a critical element in the model's success.
 
 
-The Transformer architecture is characterized by the stacking of multiple layers of self-attention and feedforward neural networks. Each layer independently employs the self-attention mechanism, functioning in parallel across the entire input sequence. This global approach to information capture is followed by the application of feedforward neural networks that further refine and transform the representations.
+The Transformer architecture(refer Fig. 1) is characterized by the stacking of multiple layers of self-attention and feedforward neural networks. Each layer independently employs the self-attention mechanism, functioning in parallel across the entire input sequence. This global approach to information capture is followed by the application of feedforward neural networks that further refine and transform the representations.
 
 
 To ensure the robustness of the model and its ability to learn intricate patterns, various techniques are integrated, such as residual connections and layer normalization. These methods help mitigate the vanishing gradient problem, thus accelerating the training process. Furthermore, Transformers often incorporate positional encodings to provide information about the order or position of tokens in the sequence, as self-attention, while powerful, does not inherently account for positional relationships.
@@ -156,19 +156,19 @@ Training the Transformer entails the minimization of a loss function, typically 
 
 \begin{figure}[htp]
     \includegraphics[width=9cm]{transformer}
-    \caption{The Transformer - model architecture. from Ashish Vaswani et. al. [Attention is all you need]}
+    \caption{The Transformer - model architecture reference Ashish Vaswani et al. [21]}
     \label{fig:galaxy}
 \end{figure}
 
-Since 2018, pre-trained language models (PLM) have gained attention, particularly those based on self-supervised learning over large-scale text data. Notable models like ELMo, BERT, and GPT-3 have demonstrated remarkable performance in various NLP tasks. PLMs offer dynamic context-aware representations and serve as a unified framework for NLP tasks. They have three typical model structures: autoregressive LM, autoencoding LM, and hybrid LM, represented by GPT, BERT, and T5, respectively. Autoregressive LM focuses on token-by-token word prediction, while autoencoding LM masks words in sentences, employs bidirectional encoding, and predicts the masked words based on context. Hybrid LM combines these approaches. BERT's success has led to its widespread adoption in academia and industry due to its strong performance in NLP tasks.
+Since 2018, pre-trained language models (PLM) have gained attention, particularly those based on self-supervised learning over large-scale text data. Notable models like ELMo, BERT, and GPT-3 have demonstrated remarkable performance in various NLP tasks. PLMs offer dynamic context-aware representations and serve as a unified framework for NLP tasks. They have three typical model structures: autoregressive LM, autoencoding LM, and hybrid LM(refer Fig. 2 for architecture) represented by GPT, BERT, and T5, respectively. Autoregressive LM focuses on token-by-token word prediction, while autoencoding LM masks words in sentences, employs bidirectional encoding, and predicts the masked words based on context. Hybrid LM combines these approaches. BERT's success has led to its widespread adoption in academia and industry due to its strong performance in NLP tasks.
 
 Leveraging the Transformer architecture, OpenAI has developed a series of GPT models, including GPT-1, GPT-2, GPT-3, and GPT-4. These models have demonstrated improvements in language understanding and generation, with GPT-3 being particularly noteworthy for its excellence in text generation tasks and support for zero-shot and few-shot learning scenarios. OpenAI has further advanced large-scale language models with models like GPT-3.5 series, which includes Code-davinci and Text-davinci models. These models have enabled users to leverage advanced language capabilities through APIs and playgrounds. GPT-4, the latest milestone, is a large multimodal model, showing enhanced capabilities in understanding nuanced instructions.
 
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{LMTYPES}
-    \caption{There three typical types of PLM: autoregressive LM, autoencoder LM and hybrid LM. Their working mechanisms are listed and compared in this
-table taken from Tianyu Wu et al. [A Brief Overview of ChatGPT: The History, Status Quo and Potential Future Development]}
+    \caption{Three typical types of PLM: autoregressive LM, autoencoder LM and hybrid LM. Their working mechanisms are listed and compared in
+table given below reference Tianyu Wu et al. [3]}
     \label{fig:your_image_label}
 \end{figure*}
 
@@ -216,7 +216,7 @@ The development of BART was driven by the objective of advancing the field of na
 
 \begin{table*}[htbp]
     \centering
-    \caption{COMPARATIVE STUDY OF GPTs}
+    \caption{COMPARATIVE STUDY OF GPTs reference Tianyu Wu et al. [3]}
     \begin{center}
     \setlength{\extrarowheight}{2pt} 
     \begin{tabular}{|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
@@ -260,7 +260,7 @@ To significantly enhance the model's performance in both few-shot and zero-shot[
 
 This strategic combination led to a substantial improvement in the model's generalization capabilities, enabling it to surpass the majority of existing methods across a diverse range of downstream tasks. Notably, GPT-3 exhibited a remarkable increase in parameter scale, scaling up by 100 times compared to GPT-2, marking a significant milestone as the first language model to exceed a parameter count of 100 billion.
 
-ChatGPT which uses GPT 3.5, as an intelligent conversational robot affiliated with AIGC, exhibits impressive capabilities in comprehending and generating language-based responses in line with given prompts. Its prowess extends to a diverse range of language-related tasks, including multilingual machine translation, code debugging, creative storytelling, acknowledging errors, and even declining inappropriate requests, as per the official declaration. Distinguishing itself from earlier conversational robots, ChatGPT possesses the ability to retain and reference prior user input throughout the course of a conversation. This multifaceted functionality is underpinned by a fusion of cutting-edge technologies, encompassing deep learning, unsupervised learning, instruction fine-tuning, multi-task learning, in-context learning, and reinforcement learning.[3]
+ChatGPT which uses GPT 3.5, as an intelligent conversational robot affiliated with AIGC, exhibits impressive capabilities in comprehending and generating language-based responses in line with given prompts. Its prowess extends to a diverse range of language-related tasks, including multilingual machine translation, code debugging, creative storytelling, acknowledging errors, and even declining inappropriate requests, as per the official declaration. Distinguishing itself from earlier conversational robots, ChatGPT possesses the ability to retain and reference prior user input throughout the course of a conversation. This multifaceted functionality is underpinned by a fusion of cutting-edge technologies, encompassing deep learning, unsupervised learning, instruction fine-tuning, multi-task learning, in-context learning, and reinforcement learning.[3][41]
 
 In the context of the pilot version of ChatGPT, known as InstructGPT and belonging to the GPT3.5 series models, researchers adopted a reinforcement learning with human feedback (RLHF) approach[39]. This method facilitated incremental training of the GPT-3 model, with the primary goal of enhancing the model's ability to better understand and align with user intent during interactions. [3]
 
@@ -274,6 +274,7 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
 
 \parskip=0.5\baselineskip
 \begin{table*}
+ \caption{Literature Survey Summarized}
 \begin{center}
  \centering
     \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
@@ -359,8 +360,6 @@ the limited effectiveness of topical context in identifying senses correctly \\
 
 3] training large models can be computationally expensive. \\
 \hline
-[22] Detecting formal thought disorder by deep contextualized word representations &  Justyna, Sarzynska-Wawer & Information not provided. & Information not provided. \\
-\hline
 [23] Bert: Pre-training of deep bidirectional transformers for language understanding & Jacob Devlin, Ming-Wei Chang, and Lee Kristina Toutanova & The methodology involves pre-training a model on a binarized next sentence prediction task using a monolingual corpus, where 50 percent of the time the next sentence is the actual next sentence and 50 percent of the time it is a random sentence from the corpus. This pre-training is shown to be beneficial for downstream tasks such as question answering and natural language inference. & BERT fine-tuning offers several merits in natural language processing (NLP) tasks. It allows for the use of deep bidirectional architectures, enabling a single pre-trained model to handle a wide range of NLP tasks. Additionally, fine-tuning is relatively inexpensive and can be replicated in a short amount of time. & 1] Applying pre-trained language representations to downstream tasks
 
 2] Pre-training from Unlabeled Text
@@ -391,9 +390,60 @@ the limited effectiveness of topical context in identifying senses correctly \\
 \hline
 [27] Improving language understanding by generative pre-training & Alec, Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever & The paper follows a two-stage training process: 1) Unsupervised Pre-training where a Transformer-based language model learns from unlabeled text by predicting the next token, and 2) Supervised Fine-tuning where the model is adapted to specific NLP tasks using labeled data and task-specific input transformations & strong transfer learning abilities in NLP and achieves impressive performance across diverse tasks without specialized architectures or extensive labeled data. Model remains task-agnostic and efficiently adapts to different NLP tasks with minimal architectural changes, leveraging abundant unlabeled data to mitigate the reliance on scarce labeled resources in challenging domains. &  the critical choice of pre-training data quality and diversity, the need for high-quality labeled data during fine-tuning, the challenge of hyperparameter tuning, variable transferability across different NLP tasks, and the substantial computational resources required for training large Transformer models.\\
  \hline
+[30] A survey on GPT-3 & Zong, Mingyu, and Bhaskar Krishnamachari & First, the model is pre-trained on a large corpus of text data using a denoising autoencoder objective. Then, it is fine-tuned on specific tasks such as language translation or text generation. During inference, the model generates text based on a prompt or completes a partially generated sequence. The model's performance is evaluated on various metrics such as perplexity and human evaluation. & its ability to generate high-quality, contextually relevant text across various domains and tasks, its user-friendly interface through the playground and API, and the potential for fine-tuning to adapt to specific tasks, enhancing its overall performance. & GPT-3's limitations include struggling with tasks requiring semantic understanding due to its unidirectional architecture, concerns about misuse and plagiarism, biases inherited from training data, and its energy-intensive operation raising environmental issues. \\
+\hline
 \end{tabular}
 \end{center}
 \end{table*}
+
+
+\begin{table*}
+\begin{center}
+ \centering
+    \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
+\hline
+\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
+\hline
+[31]  Language models are unsupervised multitask learners & Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever & These language models are designed to be versatile and applicable to a wide range of natural language processing tasks. They can be fine-tuned on specific supervised tasks, such as text classification, sentiment analysis, translation, question-answering, and more. This fine-tuning allows them to transfer their pre-learned knowledge to various downstream tasks, making them multi-task learners. & They allow practitioners to apply a single pre-trained model to multiple tasks, reducing the need for developing task-specific models from scratch. Leads to faster model development and reduced data labeling costs, as the model has already learned valuable linguistic features.  & Pre-training on vast and diverse text data can introduce biases into the models.These models often operate as black boxes, making it challenging to interpret their decision-making processes. \\
+\hline
+[32] A survey on multi-task learning & Y. Zhang and Q. Yang & & & \\
+\hline
+[33]  Generalizing from a few examples: A survey on few-shot learning & Y. Q. Wang, Q. M. Yao, J. T. Kwok, and L. M. Ni & These models specialize in learning relationships between examples and generalizing from them. This approach is particularly valuable in scenarios where obtaining extensive labeled data is impractical or costly. & By training models with very limited examples, it reduces the need for extensive labeled datasets, which can be expensive and time-consuming to acquire. & Noisy or incorrect labels can hinder model performance. The process of fine-tuning needs to be very precise without which the problem of overfitting or underfitting may occur. \\
+\hline
+[35] Language models are few-shot learners & T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan & & & \\
+\hline
+[36] Model-agnostic meta-learning for fast adaptation of deep networks & C. Finn, P. Abbeel, and S. Levine & The paper presents a model-agnostic meta-learning algorithm that optimizes model parameters through gradient descent, enabling rapid adaptation to various learning tasks with minimal data and can be applied across diverse domains and model architectures. & The method is versatile, model-agnostic, and offers state-of-the-art performance, enabling fast adaptation across various learning problems and scales while remaining applicable to diverse model architectures. & Challenges include the need for meticulous hyperparameter tuning, potential computational overhead due to double gradient updates, the requirement of some data for both meta-training and meta-testing, and sensitivity to the quality of initial model parameters. \\
+\hline
+[37] A survey of meta-reinforcement learning & J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson & Two main few-shot learning methodologies: PPG methods, which add structure and quantify uncertainty for improved exploration, and black box methods, employing neural networks as universal function approximators for arbitrary learning procedures. The choice depends on the problem's generalization and specialization needs. & Task inference methods offer structured and stable meta-training with improved performance, adding supervision, enabling optimal exploration, and quantifying task uncertainty. Black box methods provide flexibility to learn arbitrary procedures, allowing specialization, and adapting to new tasks with sufficient data. PPG methods generalize effectively, adapt flexibly using policy gradients, and recover efficient task inference algorithms for sample efficiency. & Limitations of PPG Methods: Sample InefficiencY, Stability and Speed and Limited Generalization.
+Limitations of Black Box Methods: Lack of Structure, Limited Generalization and Training Challenges. \\
+\hline
+[38] A survey on in-context learning & Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X.un, J. J. Xu, L. Li, and Z. F. Sui & The in-context learning (ICL) methodology comprises two key components: demonstration organization, involving example selection and ordering, and demonstration formatting, aimed at effective demonstration presentation for the task, utilizing techniques like kNN-based retrievers and language models. & LLMs enable demonstration acquisition and automatic instruction generation, with methods like EPR for demonstration selection and GlobalE and LocalE for optimizing demonstration ordering. Additionally, instruction formatting and reasoning steps formatting are enhanced using methods like Self Instruct, SuperNaturalInstruction, CoT, and AutoCoT to improve inference performance and handle complex tasks. & Recent research addresses challenges in in-context learning (ICL) for language models, including the development of tailored pretraining objectives, distillation of ICL abilities for smaller models, improving robustness, and enhancing scalability and efficiency. These efforts aim to align language models more closely with ICL requirement. \\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+
+\begin{table*}
+\begin{center}
+ \centering
+    \begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{3cm}|p{4cm}| }
+\hline
+\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
+\hline
+[39]  Training language models to follow instructions
+with human feedback & L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe & The process involves three steps: first, collecting demonstration data to train a supervised policy; second, gathering comparison data to train a reward model; and third, optimizing the policy through Proximal Policy Optimization (PPO) using the reward model's output as a reward signal. & improves AI model behavior across various tasks, emphasizing alignment with human intentions, cost-effectiveness, and generalization of instructions, while also addressing limitations related to human feedback and potential biases. & reliance on human feedback with potential biases, a limited representation of contractors, incomplete instructions and lack of code/data sharing, and insufficient discussion on participant compensation, which affects transparency and reproducibility. \\
+\hline
+[40] Gpt-4 technical report & OpenAI & The methodology for GPT-4 involved thorough evaluations on professional benchmarks, addressing safety challenges, and fine-tuning with human feedback to enhance capabilities and mitigate risks, ultimately aiming for a more capable and safer language model. & GPT-4 offers improved iteration, reduced hallucinations, and better performance in reasoning and coding, outperforming previous models on various NLP benchmarks, while also implementing safety enhancements to mitigate risks and misuse. & GPT-4 exhibits reliability concerns, safety challenges, and a limited context window, emphasizing the need for caution in high-stakes applications and deployment-time safety measures. \\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+
+
+
+
 
 
 \section{Proposed work}
@@ -442,9 +492,9 @@ After collecting these pertinent documents or informational insights, the langua
 
 
 
-\section{Prepare Your Paper Before Styling}
+%\section{Prepare Your Paper Before Styling}
 
-\subsection{Figures and Tables}
+%\subsection{Figures and Tables}
 %\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
 %bottom of columns. Avoid placing them in the middle of columns. Large 
 %figures and tables may span across both columns. Figure captions should be 
@@ -589,6 +639,23 @@ After collecting these pertinent documents or informational insights, the langua
 \end{thebibliography}
 \vspace{12pt}
 \color{red}
+
+
+\begin{table}[h]
+\centering
+%     \begin{adjustbox}{width=\textwidth,center}
+    % \begin{adjustbox}{center}
+        \begin{tabular}{lll}
+            \hline
+            \multirow{4}{*}{XXX} & \multicolumn{1}{l}{XXX} & \multicolumn{1}{l}{XXX} \\\cline{2-3}
+                                 & \multicolumn{1}{l}{XXX} & \multicolumn{1}{l}{XXX} \\\cline{2-3}
+                                 & \multicolumn{1}{l}{XXX} & \multicolumn{1}{l}{XXX} \\\cline{2-3}
+                                 & \multicolumn{1}{l}{XXX} & \multicolumn{1}{l}{XXX} \\\hline
+            \ttfamily xxx & \ttfamily xxx & \ttfamily xxx \\                \hline
+        \end{tabular}
+%     \end{adjustbox}
+%     \vspace{ - 05 mm}
+\end{table}
 
 
 \end{document}

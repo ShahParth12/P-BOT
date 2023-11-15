@@ -235,7 +235,7 @@ Furthermore, GPT-4 outperforms prior large language models and the majority of s
 
 What sets GPT-4 apart is its capacity to accept prompts that consist of both images and text, offering users a versatile tool for various vision and language tasks. This means that GPT-4 can generate text-based responses when given inputs that interlace text and images seamlessly. This capability extends across diverse domains, encompassing documents containing text and photographs, diagrams, or screenshots. In all of these scenarios, GPT-4 demonstrates similar high-level capabilities as it does when processing text-only inputs[36].
 
-
+In retrospect, the evolution of the GPT series, from GPT-1 to GPT-4, traces a remarkable trajectory in large-scale language model development. Each iteration expands natural language processing frontiers, showcasing the adaptability of the Transformer architecture. From unsupervised learning in GPT-1 to GPT-4's multimodal capabilities, this journey underscores a relentless pursuit of improving language understanding. ChatGPT and GPT-4 exemplify the synergy between deep learning, innovative training, and diverse data sources. As we reflect, the implications for artificial intelligence and real-world applications are profound, propelling continued exploration toward artificial general intelligence.
 
 
 
@@ -248,13 +248,11 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
 \hline
 \centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
 \hline
-[5]  &  "Mori, Shunji, Ching Y. Suen, and Kazuhiko Yamamoto" &  OCR involves scanning or capturing text from printed or handwritten documents and converting it into machine-readable text. It uses image processing and pattern recognition techniques. &  OCR automates data entry processes, saving time and reducing human errors. Advanced OCR systems offer high accuracy rates, ensuring reliable data extraction. OCR can handle various document formats and languages, making it versatile for different applications. &  Complex Layouts, Poor Image Quality, Handwriting Recognition  \\
+[5] and [6]  &  "Mori, Shunji, Ching Y. Suen, Kazuhiko Yamamoto" and "Smith, Ray" &  OCR involves scanning or capturing text from printed or handwritten documents and converting it into machine-readable text. It uses image processing and pattern recognition techniques. &  OCR automates data entry processes, saving time and reducing human errors. Advanced OCR systems offer high accuracy rates, ensuring reliable data extraction. OCR can handle various document formats and languages, making it versatile for different applications. &  Complex Layouts, Poor Image Quality, Handwriting Recognition  \\
+%[6]  &  "Smith, Ray" & OCR involves scanning or capturing text from printed or handwritten documents and converting it into machine-readable text. It uses image processing and pattern recognition techniques. & OCR automates data entry processes, saving time and reducing human errors. Advanced OCR systems offer high accuracy rates, ensuring reliable data extraction. OCR can handle various document formats and languages, making it versatile for different applications. &  Complex Layouts, Poor Image Quality, Handwriting Recognition  \\
 \hline
-[6]   &  "Smith, Ray" &  &  &    \\
-\hline
-[7]  &  "L. Rabiner and B. Juang" &  Involves modeling a sequence of observable states that are influenced by an underlying sequence of hidden states. They use probabilistic transition and emission matrices to describe how the system evolves over time, making them valuable for various applications like speech recognition and time series analysis. & Excel in modeling sequential data by capturing underlying states and probabilistic transitions, making them valuable for tasks such as speech recognition and bioinformatics. &  Poor model discrimination and Assumptions of independent feature frames and first-order Markov process  \\
-\hline
-[8]  &  "M. I. Mohd Yusoff, I. Mohamed and M. R. Abu Bakar" & & &   \\
+[7] and [8] &  "L. Rabiner, B. Juang" and "M. I. Mohd Yusoff, I. Mohamed, M. R. Abu Bakar" &  Involves modeling a sequence of observable states that are influenced by an underlying sequence of hidden states. They use probabilistic transition and emission matrices to describe how the system evolves over time, making them valuable for various applications like speech recognition and time series analysis. & Excel in modeling sequential data by capturing underlying states and probabilistic transitions, making them valuable for tasks such as speech recognition and bioinformatics. &  Poor model discrimination and Assumptions of independent feature frames and first-order Markov process  \\
+%[8]  &  "M. I. Mohd Yusoff, I. Mohamed and M. R. Abu Bakar" &  & &   \\
 \hline
 [9] &  "Viroli, C., and McLachlan, G. J." & Represent multidimensional data as a weighted combination of Gaussian distributions. Parameters are estimated via the "Expectation-Maximization" (EM) algorithm, where the E-step calculates data point probabilities for each cluster, and the M-step updates parameters for maximum likelihood. &  Soft clustering for complex data, Flexible modeling of data distributions, Probabilistic representation, Effective for mixture modeling &  Determining the optimal number of Gaussian components, Sensitive to initialization and local optima during parameter estimation, Computational complexity for high-dimensional data, Interpretability and understanding of the resulting mixture components \\
 \hline
@@ -265,6 +263,8 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
 [12]  &  "Bickel, Steffen, Peter Haider, and Tobias Scheffer" &  The frequency of n-grams in the training corpus is calculated to estimate the likelihood of encountering specific sequences. To predict a sentence, the n-grams in the sentence are evaluated for their probability of occurrence based on the frequencies derived from the training data. &  N-grams provide a straightforward way to capture local context in text data, making it easier to compute probabilities and predict sentences. This simplicity leads to faster training and inference, making it practical for real-time application. &  One of the primary challenges is the limited context captured by n-grams. Since they consider only local sequences of words, they may struggle with understanding the broader context of a sentence, especially in situations where long-range dependencies are crucial for accurate predictions.  \\
 \hline
 [13]  & "David Guthrie, Ben Allison, Wei Liu, Louise Guthrie, Yorick Wilks" &  It uses a neural network architecture where words are represented as one-hot vectors, and a hidden layer is trained to capture the relationships between words. During training, the weights of the neural network are adjusted to maximize the probability of correctly predicting context words. &  By training on large text corpora, it learns high-quality word embeddings that allow words with similar meanings or contexts to have similar vector representations. It can handle a diverse range of languages and domains, which enhances its versatility. &  Processing large corpora and adjusting the weights of the neural network can be resource-intensive, requiring substantial computing power and memory. This limits its accessibility in resource-constrained environments.  \\
+\hline
+[14]  &  "Yin, Wenpeng, Katharina Kann, Mo Yu, and Hinrich Schütze" &  Used in the experiments involves training basic DNNs from scratch without any extra knowledge or complex tricks. Optimal hyperparameters are searched for each task and model separately to ensure fair comparison and accurate results. &  Results showed that CNNs and RNNs yields synergistic insights in text classification, offering a nuanced approach where the selection of architecture hinges on the significance of grasping the complete sequence. &  Task-specific Requirements, Long Sequences, Comprehension of Global Semantics  \\
 \hline
 \end{tabular}
 \end{center}
@@ -277,8 +277,6 @@ What sets GPT-4 apart is its capacity to accept prompts that consist of both ima
     \begin{tabular}{ |p{1cm}|p{2cm}|p{4cm}|p{4cm}|p{4cm}| }
 \hline
 \centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
-\hline
-[14]  &  "Yin, Wenpeng, Katharina Kann, Mo Yu, and Hinrich Schütze" &  Used in the experiments involves training basic DNNs from scratch without any extra knowledge or complex tricks. Optimal hyperparameters are searched for each task and model separately to ensure fair comparison and accurate results. &  Results showed that CNNs and RNNs yields synergistic insights in text classification, offering a nuanced approach where the selection of architecture hinges on the significance of grasping the complete sequence. &  Task-specific Requirements, Long Sequences, Comprehension of Global Semantics  \\
 \hline
 [15] &  "Hochreiter, Sepp, and Jurgen Schmidhuber" & Experiments involved training and evaluating LSTM networks across diverse tasks, including challenges like extended time lags with concurrent noise and signal inputs, distributed continuous-valued representations, and tasks with widely spaced inputs. & Capable of resolving extended time-lag issues involving both noise and signal on a single input line, and proficient in mitigating backpropagation challenges in feed-forward networks. &  Long-time-lag problems, Learning from noisy data  \\
 \hline
@@ -304,6 +302,27 @@ the limited effectiveness of topical context in identifying senses correctly \\
 
 5] Lack of External Validation \\
 \hline
+[21]  & "Ashish, Vaswani" & It involves the application of attention-based models, specifically the Transformer model, to various tasks & 1] Attention-based architecture
+
+2]  Improved performance
+
+3] Flexibility and Scalability 
+ & 1] Handling large inputs and outputs efficiently
+
+2] Making the generation process less sequential
+
+3] Training large models can be computationally expensive. \\
+\hline
+[23] & "Jacob Devlin, Ming-Wei Chang, and Lee Kristina Toutanova" & The approach includes pre-training a model on a binarized next sentence prediction task with a monolingual corpus. Here, 50 percent of instances involve the actual next sentence, while the other 50 percent consist of a randomly selected sentence from the corpus. Demonstrated as advantageous, this pre-training strategy proves beneficial for subsequent tasks like question answering and natural language inference.& BERT fine-tuning offers several merits in natural language processing (NLP) tasks. It allows for the use of deep bidirectional architectures, enabling a single pre-trained model to handle a wide range of NLP tasks. Additionally, fine-tuning is relatively inexpensive and can be replicated in a short amount of time. & 1] Utilizing pre-trained language representations for subsequent tasks
+
+2] Pre-training from Unlabeled Text
+
+3] Single-Task Fine-Tuning
+
+4]  Limited Public System Descriptions
+ \\
+\hline
+
 \end{tabular}
 \end{center}
 \end{table*}
@@ -317,25 +336,7 @@ the limited effectiveness of topical context in identifying senses correctly \\
 \hline
 \centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
 \hline
-[21]  & "Ashish, Vaswani" & It involves the application of attention-based models, specifically the Transformer model, to various tasks & 1] Attention-based architecture
 
-2]  Improved performance
-
-3] Flexibility and Scalability 
- & 1] handling large inputs and outputs efficiently
-2] making the generation process less sequential
-
-3] training large models can be computationally expensive. \\
-\hline
-[23] & "Jacob Devlin, Ming-Wei Chang, and Lee Kristina Toutanova" & The approach includes pre-training a model on a binarized next sentence prediction task with a monolingual corpus. Here, 50 percent of instances involve the actual next sentence, while the other 50 percent consist of a randomly selected sentence from the corpus. Demonstrated as advantageous, this pre-training strategy proves beneficial for subsequent tasks like question answering and natural language inference.& BERT fine-tuning offers several merits in natural language processing (NLP) tasks. It allows for the use of deep bidirectional architectures, enabling a single pre-trained model to handle a wide range of NLP tasks. Additionally, fine-tuning is relatively inexpensive and can be replicated in a short amount of time. & 1] Utilizing pre-trained language representations for subsequent tasks
-
-2] Pre-training from Unlabeled Text
-
-3] Single-Task Fine-Tuning
-
-4]  Limited Public System Descriptions
- \\
-\hline
 [24]  & "Yiren and Chen" & In the context of document summarization within a sequence-to-sequence framework, an attention mechanism based on graphs is employed. This strategy harnesses the power of graph-based attention to enhance the effectiveness of document summarization. & 1] enhances the aspect-based sentiment analysis
 
 2] Correcting misleading context
@@ -359,6 +360,10 @@ the limited effectiveness of topical context in identifying senses correctly \\
  \hline
 [30]  & "Zong, Mingyu, and Bhaskar Krishnamachari" & Initially, the model undergoes pre-training on an extensive text corpus using a denoising autoencoder objective. Subsequently, fine-tuning is conducted for specific tasks like language translation or text generation. In the inference phase, the model produces text based on a prompt or completes partially generated sequences. Performance evaluation involves metrics such as perplexity and human assessment. & its ability to generate high-quality, contextually relevant text across various domains and tasks, its user-friendly interface through the playground and API, and the potential for fine-tuning to adapt to specific tasks, enhancing its overall performance. & GPT-3's limitations include struggling with tasks requiring semantic understanding due to its unidirectional architecture, concerns about misuse and plagiarism, biases inherited from training data, and its energy-intensive operation raising environmental issues. \\
 \hline
+[31] and [32] & "Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. , Sutskever" and "Y. Zhang, Q. Yang" & Crafted for versatility, these language models are tailored to address a broad spectrum of natural language processing tasks. Their adaptability extends to fine-tuning for specific supervised tasks like text classification, sentiment analysis, translation, question-answering, and beyond. This fine-tuning allows them to transfer their pre-learned knowledge to various downstream tasks, making them multi-task learners. & Practitioners can employ a single pre-trained model across various tasks, diminishing the necessity to create task-specific models from the ground up. This streamlines model development, accelerating the process and lowering data labeling costs, given that the model has already assimilated essential linguistic features. & Pre-training on extensive and diverse text data may introduce biases into the models. Additionally, these models often function as black boxes, posing challenges in interpreting their decision-making processes. \\
+%\hline
+%[32]  & "Y. Zhang and Q. Yang" & & & \\
+\hline
 \end{tabular}
 \end{center}
 \end{table*}
@@ -371,13 +376,10 @@ the limited effectiveness of topical context in identifying senses correctly \\
 \hline
 \centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
 \hline
-[31]  & "Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever" & Crafted for versatility, these language models are tailored to address a broad spectrum of natural language processing tasks. Their adaptability extends to fine-tuning for specific supervised tasks like text classification, sentiment analysis, translation, question-answering, and beyond. This fine-tuning allows them to transfer their pre-learned knowledge to various downstream tasks, making them multi-task learners. & Practitioners can employ a single pre-trained model across various tasks, diminishing the necessity to create task-specific models from the ground up. This streamlines model development, accelerating the process and lowering data labeling costs, given that the model has already assimilated essential linguistic features. & Pre-training on extensive and diverse text data may introduce biases into the models. Additionally, these models often function as black boxes, posing challenges in interpreting their decision-making processes. \\
-\hline
-[32]  & "Y. Zhang and Q. Yang" & & & \\
-\hline
-[33]   & "Y. Q. Wang, Q. M. Yao, J. T. Kwok, and L. M. Ni" & These models specialize in learning relationships between examples and generalizing from them. This approach is particularly valuable in scenarios where obtaining extensive labeled data is impractical or costly. & By training models with very limited examples, it reduces the need for extensive labeled datasets, which can be time-consuming and expensive to acquire. & Noisy or incorrect labels can hinder model performance. The process of fine-tuning needs to be very precise without which the problem of overfitting or underfitting may occur. \\
-\hline
-[35]  & "T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan" & & & \\
+
+[33] and [35]  & "Y. Q. Wang, Q. M. Yao, J. T. Kwok, L. M. Ni" and "T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan" & These models specialize in learning relationships between examples and generalizing from them. This approach is particularly valuable in scenarios where obtaining extensive labeled data is impractical or costly. & By training models with very limited examples, it reduces the need for extensive labeled datasets, which can be time-consuming and expensive to acquire. & Noisy or incorrect labels can hinder model performance. The process of fine-tuning needs to be very precise without which the problem of overfitting or underfitting may occur. \\
+%\hline
+%[35]  & "T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan" & & & \\
 \hline
 [36]  & "C. Finn, P. Abbeel, and S. Levine" & The paper presents a model-agnostic meta-learning algorithm that optimizes model parameters through gradient descent, enabling rapid adaptation to various learning tasks with minimal data and can be applied across diverse domains and model architectures. & The method is versatile, model-agnostic, and offers state-of-the-art performance, enabling fast adaptation across various learning problems and scales while remaining applicable to diverse model architectures. & Challenges include the need for meticulous hyperparameter tuning, potential computational overhead due to double gradient updates, the requirement of some data for both meta-training and meta-testing, and sensitivity to the quality of initial model parameters. \\
 \hline
@@ -386,18 +388,6 @@ Limitations of Black Box Methods: Lack of Structure, Limited Generalization and 
 \hline
 [38]  & "Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X.un, J. J. Xu, L. Li, and Z. F. Sui" & The in-context learning (ICL) methodology comprises two key components: demonstration organization, involving example selection and ordering, and demonstration formatting, aimed at effective demonstration presentation for the task, utilizing techniques like kNN-based retrievers and language models. & LLMs enable demonstration acquisition and automatic instruction generation, with methods like EPR for demonstration selection and GlobalE and LocalE for optimizing demonstration ordering. Additionally, instruction formatting and reasoning steps formatting are enhanced using methods like Self Instruct, SuperNaturalInstruction, CoT, and AutoCoT to improve inference performance and handle complex tasks. & Recent research addresses challenges in in-context learning (ICL) for language models, including the development of tailored pretraining objectives, distillation of ICL abilities for smaller models, improving robustness, and enhancing scalability and efficiency. These efforts aim to align language models more closely with ICL requirement. \\
 \hline
-\end{tabular}
-\end{center}
-\end{table*}
-
-
-\begin{table*}
-\begin{center}
- \centering
-    \begin{tabular}{ |p{1cm}|p{2cm}|p{4cm}|p{4cm}|p{4cm}| }
-\hline
-\centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
-\hline
 [39]  & "L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe" & The procedure consists of three steps: initially collecting demonstration data for training a supervised policy; then gathering comparison data to train a reward model; and finally, optimizing the policy via Proximal Policy Optimization (PPO) with the reward model's output serving as the reward signal. & improves AI model behavior across various tasks, emphasizing alignment with human intentions, cost-effectiveness, and generalization of instructions, while also addressing limitations related to human feedback and potential biases. & reliance on human feedback with potential biases, a limited representation of contractors, incomplete instructions and lack of code/data sharing, and insufficient discussion on participant compensation, which affects transparency and reproducibility. \\
 \hline
 [40]& "OpenAI" & The methodology for GPT-4 involved thorough evaluations on professional benchmarks, addressing safety challenges, and fine-tuning with human feedback to enhance capabilities and mitigate risks, ultimately aiming for a more capable and safer language model. & GPT-4 offers improved iteration, reduced hallucinations, and better performance in reasoning and coding, outperforming previous models on various NLP benchmarks, while also implementing safety enhancements to mitigate risks and misuse. & GPT-4 exhibits reliability concerns, safety challenges, and a limited context window, emphasizing the need for caution in high-stakes applications and deployment-time safety measures. \\
@@ -405,9 +395,6 @@ Limitations of Black Box Methods: Lack of Structure, Limited Generalization and 
 \end{tabular}
 \end{center}
 \end{table*}
-
-
-
 
 
 

@@ -288,7 +288,7 @@ In retrospect, the evolution of the GPT series, from GPT-1 to GPT-4, traces a re
 \hline
 \centering PAPER CITED & \centering  AUTHORS & \centering METHODOLOGY &  \centering MERITS &  \centering CHALLENGES \arraybackslash \\ 
 \hline
-[12]  &  "Bickel, Steffen, Peter Haider, and Tobias Scheffer" &  The frequency of n-grams in the training corpus is calculated to estimate the likelihood of encountering specific sequences. To predict a sentence, the n-grams in the sentence are evaluated for their probability of occurrence based on the frequencies derived from the training data. &  N-grams provide a straightforward way to capture local context in text data, making it easier to compute probabilities and predict sentences. This simplicity leads to faster training and inference, making it practical for real-time application. &  One of the primary challenges is the limited context captured by n-grams. Since they consider only local sequences of words, they may struggle with understanding the broader context of a sentence, especially in situations where long-range dependencies are crucial for accurate predictions.  \\
+[12]  &  "Bickel, Steffen, Peter Haider, and Tobias Scheffer" &  The frequency of n-grams in the training corpus is calculated to estimate the likelihood of encountering specific sequences. To predict a sentence, the n-grams in the sentence are evaluated for their probability of occurrence based on the frequencies derived from the training data. &  N-grams provides a straightforward way to capture local context in text data, making it easier to compute probabilities and predict sentences. This simplicity leads to faster training and inference, making it practical for real-time application. &  One of the primary challenges is the limited context captured by n-grams. Since they consider only local sequences of words, they may struggle with understanding the broader context of a sentence, especially in situations where long-range dependencies are crucial for accurate predictions.  \\
 \hline
 [13]  & "David Guthrie, Ben Allison, Wei Liu, Louise Guthrie, Yorick Wilks" &  It uses a neural network architecture where words are represented as one-hot vectors, and a hidden layer is trained to capture the relationships between words. During training, the weights of the neural network are adjusted to maximize the probability of correctly predicting context words. &  By training on large text corpora, it learns high-quality word embeddings that allow words with similar meanings or contexts to have similar vector representations. It can handle a diverse range of languages and domains, which enhances its versatility. &  Processing large corpora and adjusting the weights of the neural network can be resource-intensive, requiring substantial computing power and memory. This limits its accessibility in resource-constrained environments.  \\
 \hline
@@ -484,46 +484,46 @@ After collecting these pertinent documents or informational insights, the langua
 \section{Conclusion}
 In conclusion, P-Bot stands as a revolutionary PDF chatbot, offering users the capability to effortlessly upload multiple or extensive PDFs and receive concise, summarized answers to their queries. Its advanced functionality not only streamlines information retrieval from voluminous documents but also enhances user convenience. P-Bot represents a significant leap forward in the realm of chatbot technology, providing a practical solution for efficiently extracting key insights from large sets of PDFs, ultimately empowering users in their information-seeking endeavors.
 
-\section{Ease of Use}
-\subsection{Selecting a Template}
-This template has been tailored for output on the custom paper size (8.26 cm x 11.22 cm). The margins are set as follows: top = 0.98 mm, bottom = 1.18 mm, right = 0.79 mm, left = 0.79 mm, space between column = 0.3 mm. The paragraphs must be indented. All paragraphs must be left justified and right justified.
+%\section{Ease of Use}
+%\subsection{Selecting a Template}
+%This template has been tailored for output on the custom paper size (8.26 cm x 11.22 cm). The margins are set as follows: top = 0.98 mm, bottom = 1.18 mm, right = 0.79 mm, left = 0.79 mm, space between column = 0.3 mm. The paragraphs must be indented. All paragraphs must be left justified and right justified.
 
-\subsection{Maintaining the Integrity of the Specifications} 
-The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. Your paper is one part of the entire proceedings, not an independent document. Please do not revise any of the current designations.
+%\subsection{Maintaining the Integrity of the Specifications} 
+%The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. Your paper is one part of the entire proceedings, not an independent document. Please do not revise any of the current designations.
 
-Text font. The entire document should be in times New Roman font size 10. Paper title must be Left size, bold, regular font size 18 and the first letter of each word capitalized. Author names must be regular font size 10, bold. Author affiliation must be regular font size 9. Email addresses font size 9. Level 1 main headings must be Left size, bold, regular font size 12 and first word capitalized. Level 2 Sub headings must be left-justified, bold, italic, font size 11 and the first letter of each word capitalized.
+%Text font. The entire document should be in times New Roman font size 10. Paper title must be Left size, bold, regular font size 18 and the first letter of each word capitalized. Author names must be regular font size 10, bold. Author affiliation must be regular font size 9. Email addresses font size 9. Level 1 main headings must be Left size, bold, regular font size 12 and first word capitalized. Level 2 Sub headings must be left-justified, bold, italic, font size 11 and the first letter of each word capitalized.
 
-\section{Prepare Your Paper Before Styling}
-Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
+%\section{Prepare Your Paper Before Styling}
+%Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
 
-\subsection{Abbreviations and Acronyms} 
-Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Do not use abbreviations in the title or headings unless they are unavoidable.
+%\subsection{Abbreviations and Acronyms} 
+%Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Do not use abbreviations in the title or headings unless they are unavoidable.
 
-\subsection{Units} 
-Use SI as primary units. English units may be used as secondary units (in parentheses). Use a zero before decimal points: “0.25”, not “.25”. Use “cm3”, not “cc”.
+%\subsection{Units} 
+%Use SI as primary units. English units may be used as secondary units (in parentheses). Use a zero before decimal points: “0.25”, not “.25”. Use “cm3”, not “cc”.
 
-\subsection{Equations} 
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font, Equations font size should be 9 and italic (please no other font). Equations should be edited by Math type, not in text or graphic versions. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop.
-\linebreak
+%\subsection{Equations} 
+%The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font, Equations font size should be 9 and italic (please no other font). Equations should be edited by Math type, not in text or graphic versions. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop.
+%\linebreak
 
-Where:
-\begin{itemize}
-\item MC is the moisture content (\%)
-\item M1 is the initial weight of the wet sample (g)
-\item M2 is the weight of the dried sample (g)
-\end{itemize}
+%Where:
+%\begin{itemize}
+%\item MC is the moisture content (\%)
+%\item M1 is the initial weight of the wet sample (g)
+%\item M2 is the weight of the dried sample (g)
+%\end{itemize}
 
-Be sure that the symbols in your equation have been defined immediately following the equation. Use “Eq. 1”, not “Eq. (1)” or “Equation (1)”, and at the beginning of a sentence.
+%Be sure that the symbols in your equation have been defined immediately following the equation. Use “Eq. 1”, not “Eq. (1)” or “Equation (1)”, and at the beginning of a sentence.
 
-\section{Using the Template}
-After the text edit has been completed, the paper is ready for the template. Duplicate the template file by using the Save As command. In this newly created file, highlight all of the contents and import your prepared text file. You are now ready to style your paper.
+%\section{Using the Template}
+%After the text edit has been completed, the paper is ready for the template. Duplicate the template file by using the Save As command. In this newly created file, highlight all of the contents and import your prepared text file. You are now ready to style your paper.
 
-\subsection{Authors and Affiliations} 
-The template is designed so that author affiliations are not repeated each time for multiple authors of the same affiliation. Please keep your affiliations as succinct as possible (do NOT post your job titles, positions, academic degrees, zip codes, names of building, street, district, province, state, etc.). This template was designed for two affiliations. You can adjust the template for authors with one affiliation or more than two affiliations.
+%\subsection{Authors and Affiliations} 
+%The template is designed so that author affiliations are not repeated each time for multiple authors of the same affiliation. Please keep your affiliations as succinct as possible (do NOT post your job titles, positions, academic degrees, zip codes, names of building, street, district, province, state, etc.). This template was designed for two affiliations. You can adjust the template for authors with one affiliation or more than two affiliations.
 
 
-\subsection{Identify the Headings} 
-Sometimes mobile app Headings are organizational devices that guide the reader through your paper. There are two types: component headings and text heads. Component headings identify the different components of your paper and are not subordinate to each other. Examples include Introduction, Acknowledgments and References. Text heading organize the topics on a relational, hierarchical basis. If there are two or more sub-topics, the next level head should be used if there are not at least two sub-topics, then no subheads should be introduced.
+%\subsection{Identify the Headings} 
+%Sometimes mobile app Headings are organizational devices that guide the reader through your paper. There are two types: component headings and text heads. Component headings identify the different components of your paper and are not subordinate to each other. Examples include Introduction, Acknowledgments and References. Text heading organize the topics on a relational, hierarchical basis. If there are two or more sub-topics, the next level head should be used if there are not at least two sub-topics, then no subheads should be introduced.
 
 \begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
 \includegraphics[width=\linewidth]{Multiple_case-study_design}
@@ -531,85 +531,165 @@ Sometimes mobile app Headings are organizational devices that guide the reader t
 \label{Fig.Multiple_case-study_design}
 \end{figure*}
 
-\begin{table*}[!hbt]
-\caption{Demographics of four cases}
-\centering
-\begin{tabular}{ p{3cm}  p{3cm} p{3cm} p{3cm} p{3cm} }
-\toprule
-Case ID &   C1	&	C2	&	C3	&	C4 \\
-\midrule
-Business type & Software house & Software house & Software house & Software house \\
-Software house & National & International & International & National\\
-Dev. Method & Scrum Agile & Kanban Agile & Scrum Agile & Scrum Agile \\
-Mobile apps types & Games apps, Taxi apps & Business apps & Social apps, business apps & Hotel apps, travel apps\\
-Single user/ Enterprise apps & Single user& Enterprise & Enterprise&Single user \\
-Team size& 2 teams, each 5 members & 4 teams, each has 4 members & 5 teams, each has 5 members & 2 teams, each has 4 members\\
-\bottomrule
-\end{tabular}
-\label{table:demographics_info}
-\end{table*}
+%\begin{table*}[!hbt]
+%\caption{Demographics of four cases}
+%\centering
+%\begin{tabular}{ p{3cm}  p{3cm} p{3cm} p{3cm} p{3cm} }
+%\toprule
+%Case ID &   C1	&	C2	&	C3	&	C4 \\
+%\midrule
+%Business type & Software house & Software house & Software house & Software house \\
+%Software house & National & International & International & National\\
+%Dev. Method & Scrum Agile & Kanban Agile & Scrum Agile & Scrum Agile \\
+%Mobile apps types & Games apps, Taxi apps & Business apps & Social apps, business apps & Hotel apps, travel apps\\
+%Single user/ Enterprise apps & Single user& Enterprise & Enterprise&Single user \\
+%Team size& 2 teams, each 5 members & 4 teams, each has 4 members & 5 teams, each has 5 members & 2 teams, each has 4 members\\
+%\bottomrule
+%\end{tabular}
+%\label{table:demographics_info}
+%\end{table*}
 
-\subsection{Figures and Tables} 
-Place figures and tables at the top or bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use “Fig. 1” and “Table 1” even at the beginning of a sentence.
+%\subsection{Figures and Tables} 
+%Place figures and tables at the top or bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use “Fig. 1” and “Table 1” even at the beginning of a sentence.
 
-Use Times New Roman font size 9 for Figure and Table labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. If include-ing units in the label, present them within parentheses. Label axes only with units just “A/m”. Do not label axes with a ratio of quantities and units. Graphs may be full color. Use only SOLID FILL COLORS which contrast well both on screen and hardcopy as shown in Fig. 1. When using photographs make sure the resolution is adequate to reveal important details as shown in Fig. 2.
+%Use Times New Roman font size 9 for Figure and Table labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. If include-ing units in the label, present them within parentheses. Label axes only with units just “A/m”. Do not label axes with a ratio of quantities and units. Graphs may be full color. Use only SOLID FILL COLORS which contrast well both on screen and hardcopy as shown in Fig. 1. When using photographs make sure the resolution is adequate to reveal important details as shown in Fig. 2.
 
-\section{Conclusion}
-The main conclusions of the experimental work should be presented. The contribution of the work to the scientific community and its economic implications should be emphasized.
+%\section{Conclusion}
+%The main conclusions of the experimental work should be presented. The contribution of the work to the scientific community and its economic implications should be emphasized.
 
-\section{Acknowledgement}
-Use same font size for the content of acknowledgements section.
+%\section{Acknowledgement}
+%Use same font size for the content of acknowledgements section.
 
-\section{Funding Information}
-The authors should acknowledge the funders of this manuscript and provide all necessary funding information.
+%\section{Funding Information}
+%The authors should acknowledge the funders of this manuscript and provide all necessary funding information.
 
-\section{Author’s Contributions}
-This section should state the contributions made by each author in the preparation, development and publication of this manuscript.
+%\section{Author’s Contributions}
+%This section should state the contributions made by each author in the preparation, development and publication of this manuscript.
 
-\section{Ethics}
-Authors should address any ethical issues that may arise after the publication of this manuscript.
+%\section{Ethics}
+%Authors should address any ethical issues that may arise after the publication of this manuscript.
 
 
 \section{References}
-Use the author/date system of references. In the text refer to the authors’ name (without initials) and year of publication. All publications cited in the text should be presented in a list of references following the text of the manuscript.
+%Use the author/date system of references. In the text refer to the authors’ name (without initials) and year of publication. All publications cited in the text should be presented in a list of references following the text of the manuscript.
 
-\begin{enumerate}
-\item \subsection{Examples for a single author}
-Peterson (1993) has shown that...This is in agreement with the results obtained by several authors (Kramer, 1994; Smith, 1995; Brown, 1999)
-\item \subsection{Examples for two authors}
-Smith and White (1999) reported that....This was later found to be incorrect (Amir and Ahmed, 2000).
+%\begin{enumerate}
+%\item \subsection{Examples for a single author}
+%Peterson (1993) has shown that...This is in agreement with the results obtained by several authors (Kramer, 1994; Smith, 1995; Brown, 1999)
+%\item \subsection{Examples for two authors}
+%Smith and White (1999) reported that....This was later found to be incorrect (Amir and Ahmed, 2000).
 
-\item \subsection{Examples for three or more authors}
-Moore et al. (1990) stated that...Similar results were reported recently (Smith et al., 2003).
-\end{enumerate}
-
-The list of references should include only those cited in the manuscript and arranged alphabetically by authors’ names. Titles of journals should be given in full. ‘In press' can only be used to cite manuscripts actually accepted for publication in a journal. Citations such as ‘manuscript in preparation' or ‘manuscript submitted' are not permitted. Authors must provide Digital Object Identifier (DOI) number for all references. If there is no DOI for any reference, author may provide its URL/direct accessible web link for verification purpose. References without DOI or internet link are not acceptable.  The following format should be adhered to.
+%\item \subsection{Examples for three or more authors}
+%Moore et al. (1990) stated that...Similar results were reported recently (Smith et al., 2003).
+%\end{enumerate}
 
 \begin{enumerate}
 \item \subsection{Journal Papers}
-Calik, P., P. Yilgora, P. Ayhanb and A.S. Demir. 2004. Oxygen transfer effects on recombinant benzaldehydelyase production. Chemical Engineering and Science, 59 (22-23): 5075-5083. DOI:10.1016/j.ces.2004.07.070.
-\item \subsection{Text Book}
-Navabi, Z., 1998. Analysis and Modeling of Digital Systems.2nd Ed. McGraw Hill, New York. ISBN: 0070464790, pp: 632.
-\item \subsection{Book Chapter} Katz, R.H., 1986. Computer-Aided Design Databases. In: New Directions for Database Systems, Ariav, G. and J. Clifford, (Eds.), Intellect Books, Norwood, NJ, pp: 110-123. ISBN: 0893913448.
-\item \subsection{Conference Proceedings} Magott, J. and K. Skudlarski, 1989. Combining Generalized Stochastic Petri Nets and PERT Networks For The Performance Evaluation Of Concurrent Processes. Proceedings of the 3rd International Workshop on Petri Nets and Performance Models, Dec. 11-13, IEEE Xplore Press, Japan, pp: 249-256. DOI: 10.1109/PNPM.1989.68558.
-\item \subsection{Government Publications} United Nations, 2001. Indicators of Sustainable Development: Guidelines and Methodologies. United Nations Press, New York, USA.
-\item \subsection{Online Publications} Lal, R., 1995. Sustainable Management of Soil Resources in the Humid Tropics. United Nations University Press, Tokyo, Japan. {URL} (Accessed on March 17, 2011)
-\item \subsection{Generic Website}
-UNEP, 2002.Cleaner Production Assessment in Industries.Production and Consumption Branch. United Nations Environment Program. {URL} (Accessed on February 13, 2011)
-\item \subsection{Theses}
-Alkoaik, F., 2005. Fate of plant pathogens and pesticides during composting of greenhouse tomato plant residues. Unpublished dissertation in partial fulfillment of the requirements for the degree of Doctor of Philosophy, Dalhousie University, Halifax, Nova Scotia, Canada
+Wu, J., Gan, W., Chen, Z., Wan, S., and Lin, H. (2023). "AI-generated content (AIGC): A survey," arXiv preprint arXiv:2304.06632, pp. 1–17.
+
+Wang, Y., Pan, Y., Yan, M., Su, Z., and Luan, T. H. (2023). "A Survey on ChatGPT: AI-Generated Contents, Challenges, and Solutions." arXiv preprint arXiv:2305.18339.
+
+Wu, T., He, S., Liu, J., Sun, S., Liu, K., Han, Q.L., and Tang, Y. (2023). "A brief overview of ChatGPT: The history, status quo, and potential future development." IEEE/CAA Journal of Automatica Sinica, 10(5), pp. 1122-1136.
+
+Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. "ChatGPT is not all you need. A State of the Art Review of large Generative AI models." arXiv preprint arXiv:2301.04655, 2023.
+
+Mori, Shunji, Ching Y. Suen, and Kazuhiko Yamamoto. "Historical review of OCR research and development." Proceedings of the IEEE 80.7 (1992): 1029-1058.
+
+Smith, Ray. "An overview of the Tesseract OCR engine." Ninth international conference on document analysis and recognition (ICDAR 2007). Vol. 2. IEEE, 2007.
+
+Rabiner, L., and Juang, B. (1986). "An introduction to hidden Markov models." IEEE ASSP Magazine, 3(1), 4-16.
+
+Mohd Yusoff, M. I., Mohamed, I., and Abu Bakar, M. R. (2014). "Hidden Markov models: An insight." Proceedings of the 6th International Conference on Information Technology and Multimedia, 259-264.
+
+Viroli, C., and McLachlan, G. J. (2017). "Deep Gaussian mixture models." Statistics and Computing. doi:10.1007/s11222-017-9793-z
+
+Pauls, Adam, and Dan Klein. "Faster and smaller n-gram language models." Proceedings of the 49th annual meeting of the Association for Computational Linguistics: Human Language Technologies. 2011.
+
+Zhang, Y., and Yang, Q. (2022). "A survey on multi-task learning." IEEE Trans. Knowl. Data Eng., 34(12), 5586–5609.
+
+Wang, Y. Q., Yao, Q. M., Kwok, J. T., and Ni, L. M. (2021). "Generalizing from a few examples: A survey on few-shot learning." ACM Comput. Surv., 53(3), 63.
+
+Khosla, M., Anand, A., and Setty, V. (2019). "A comprehensive comparison of unsupervised network representation learning methods." arXiv preprint arXiv:1903.07902.
+
+Yin, Wenpeng, Ching Y. Suen, and Kazuhiko Yamamoto. "Comparative study of CNN and RNN for natural language processing." arXiv preprint arXiv:1702.01923 (2017).
+
+Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term memory." Neural computation 9.8 (1997): 1735-1780.
+
+Hochreiter, Sepp. "The vanishing gradient problem during learning recurrent neural nets and problem solutions." International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems 6.02 (1998): 107-116.
+
+Liang, Zhiyao, and Shiru Zhang. "Generating and measuring similar sentences using long short-term memory and generative adversarial networks." IEEE Access 9 (2021): 112637-112654.
+
+Miller, George A. "WordNet: a lexical database for English." Communications of the ACM 38.11 (1995): 39-41.
+
+Wang, Kunfeng, et al. "Generative adversarial networks: introduction and outlook." IEEE/CAA Journal of Automatica Sinica 4.4 (2017): 588-598.
+
+Tang, Xianlun, et al. "A multi-scale convolutional attention based GRU network for text classification." 2019 Chinese Automation Congress (CAC). IEEE, 2019.
+
+Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
+
+Sarzynska-Wawer, Justyna, et al. "Detecting formal thought disorder by deep contextualized word representations." Psychiatry Research 304 (2021): 114135.
+
+Kenton, Jacob Devlin Ming-Wei Chang, and Lee Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." Proceedings of naacL-HLT. Vol. 1. 2019.
+
+Chen, Yiren, et al. "Improving bert with self-supervised attention." IEEE Access 9 (2021): 144129-144139.
+
+Liu, Zhuang, et al. "A robustly optimized BERT pre-training approach with post-training." China National Conference on Chinese Computational Linguistics. Cham: Springer International Publishing, 2021.
+
+Lewis, Mike, et al. "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension." arXiv preprint arXiv:1910.13461 (2019).
+
+Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. "Improving language understanding by generative pre-training." (2018).
+
+Khosla, M., Anand, A., and  Setty, V. (2019). "A comprehensive comparison of unsupervised network representation learning methods." arXiv preprint arXiv:1903.07902.
+
+Ieracitano, C., Paviglianiti, A., Campolo, M., Hussain, A., Pasero, E., and Morabito, F. C. (2021). "A novel automatic classification system based on hybrid unsupervised and supervised machine learning for electrospun nanofibers." IEEE/CAA J. Autom. Sinica, 8(1), 64–76.
+
+Zong, Mingyu, and Bhaskar Krishnamachari. "A survey on GPT-3." arXiv preprint arXiv:2212.00857 (2022).
+
+Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever, I. (2019). "Language models are unsupervised multitask learners." OpenAI blog, 1(8), p.9.
+
+Zhang, Y., and Yang, Q. (2022). "A survey on multi-task learning." IEEE Trans. Knowl. Data Eng., vol.34, no.12, pp.5586–5609.
+
+Wang, Y. Q., Yao, Q. M., J. T. Kwok, and L. M. Ni. (2021). "Generalizing from a few examples: A survey on few-shot learning." ACM Comput. Surv., vol.53, no. 3, p. 63.
+
+Khosla, M., A. Anand, and V. Setty. (2019). "A comprehensive comparison of unsupervised network representation learning methods." arXiv preprint arXiv: 1903.07902.
+
+T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei. (2020). "Language models are few-shot learners." in Proc. 34th Int. Conf. Neural Information Processing Systems, Vancouver, Canada, pp. 1877–1901.
+
+C. Finn, P. Abbeel, and S. Levine. (2017). "Model-agnostic meta-learning for fast adaptation of deep networks." in Proc. 34th Int. Conf. Machine Learning, Sydney, Australia, pp. 1126–1135.
+
+J. Beck, R. Vuorio, E. Z. Liu, Z. Xiong, L. Zintgraf, C. Finn, and S. Whiteson. (2023). "A survey of meta-reinforcement learning." arXiv preprint arXiv: 2301.08028.
+
+Q. X. Dong, L. Li, D. M. Dai, C. Zheng, Z. Y. Wu, B. B. Chang, X. Sun, J. J. Xu, L. Li, and Z. F. Sui. (2022). "A survey on in-context learning." arXiv preprint arXiv: 2301.00234.
+
+L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, and R. Lowe. (2022). "Training language models to follow instructions with human feedback." arXiv preprint arXiv: 2203.02155.
+
+OpenAI. (2023). "Gpt-4 technical report." Available: https://cdn.openai.com/papers/gpt-4.pdf.
+
+Ye, Junjie, et al. (2023). "A comprehensive capability analysis of gpt-3 and gpt-3.5 series models." arXiv preprint arXiv:2303.10420.
+
+
+
+
+%\item \subsection{Text Book}
+%Navabi, Z., 1998. Analysis and Modeling of Digital Systems.2nd Ed. McGraw Hill, New York. ISBN: 0070464790, pp: 632.
+%\item \subsection{Book Chapter} Katz, R.H., 1986. Computer-Aided Design Databases. In: New Directions for Database Systems, Ariav, G. and J. Clifford, (Eds.), Intellect Books, Norwood, NJ, pp: 110-123. ISBN: 0893913448.
+%\item \subsection{Conference Proceedings} Magott, J. and K. Skudlarski, 1989. Combining Generalized Stochastic Petri Nets and PERT Networks For The Performance Evaluation Of Concurrent Processes. Proceedings of the 3rd International Workshop on Petri Nets and Performance Models, Dec. 11-13, IEEE Xplore Press, Japan, pp: 249-256. DOI: 10.1109/PNPM.1989.68558.
+%\item \subsection{Government Publications} United Nations, 2001. Indicators of Sustainable Development: Guidelines and Methodologies. United Nations Press, New York, USA.
+%\item \subsection{Online Publications} Lal, R., 1995. Sustainable Management of Soil Resources in the Humid Tropics. United Nations University Press, Tokyo, Japan. {URL} (Accessed on March 17, 2011)
+%\item \subsection{Generic Website}
+%UNEP, 2002.Cleaner Production Assessment in Industries.Production and Consumption Branch. United Nations Environment Program. {URL} (Accessed on February 13, 2011)
+%\item \subsection{Theses}
+%Alkoaik, F., 2005. Fate of plant pathogens and pesticides during composting of greenhouse tomato plant residues. Unpublished dissertation in partial fulfillment of the requirements for the degree of Doctor of Philosophy, Dalhousie University, Halifax, Nova Scotia, Canada
 \end{enumerate}
 
 %-------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-\phantomsection
-\setlength{\bibsep}{0.5pt} % remove spaces between references
-\bibliographystyle{apalike} 
-\bibliography{references}
-
-
-
+%\phantomsection
+%\setlength{\bibsep}{0.5pt} % remove spaces between references
+%\bibliographystyle{apalike} 
+%\bibliography{references}
+%\phantomsection
 
 %----------------------------------------------------------------------------------------
 
